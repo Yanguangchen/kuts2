@@ -1,0 +1,24 @@
+{
+  "name": "Kuts & Kurls",
+  "short_name": "Kuts&Kurls",
+  "description": "Hair & Nails Salon in Singapore: cuts, color, perms, mani/pedi.",
+  "id": "/",
+  "start_url": "/?source=pwa",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0c0c0c",
+  "theme_color": "#d4a373",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": ["beauty", "lifestyle"],
+  "icons": [
+    {
+      "src": "/apple-icon.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ]
+}
+
+
