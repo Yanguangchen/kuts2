@@ -1026,10 +1026,8 @@ h2 {
 }
 
 #contact-info.contact {
-  background: rgba(255, 255, 255, 0.6);
-  backdrop-filter: saturate(160%) blur(10px);
-  -webkit-backdrop-filter: saturate(160%) blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.7);
+  background: #f7f1e8;
+  border: 1px solid rgba(139, 117, 70, 0.25);
   border-radius: 14px;
   padding: 16px;
   box-shadow: 0 0 0 1px var(--ring) inset;
