@@ -17,21 +17,21 @@
     <meta name="robots" content="index,follow" />
     <meta name="author" content="Web Wizards" />
     <link rel="manifest" href="/manifest.json" />
-    <link rel="icon" href="/apple-icon.png?v=2" type="image/png" sizes="any" />
+    <link rel="icon" href="/public/favicon.png" type="image/png" sizes="any" />
     <link
       rel="icon"
-      href="/apple-icon.png?v=2"
+      href="/public/favicon.png"
       type="image/png"
       sizes="32x32"
     />
     <link
       rel="icon"
-      href="/apple-icon.png?v=2"
+      href="/public/favicon.png"
       type="image/png"
       sizes="16x16"
     />
-    <link rel="shortcut icon" href="/apple-icon.png?v=2" type="image/png" />
-    <link rel="apple-touch-icon" href="/apple-icon.png?v=2" sizes="180x180" />
+    <link rel="shortcut icon" href="/public/favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="/public/favicon.png" sizes="180x180" />
     <link rel="canonical" href="https://kutskurls.com/" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -47,8 +47,8 @@
       property="og:description"
       content="Haircuts, coloring, perms, manicures, pedicures, lashes, brows, waxing, IPL."
     />
-    <meta property="og:image" content="/assets/Banner.jpg" />
-    <meta property="og:image:secure_url" content="/assets/Banner.jpg" />
+    <meta property="og:image" content="/public/favicon.png" />
+    <meta property="og:image:secure_url" content="/public/favicon.png" />
     <meta property="og:image:type" content="image/png" />
     <meta property="og:image:width" content="1024" />
     <meta property="og:image:height" content="1024" />
@@ -64,8 +64,8 @@
       name="twitter:description"
       content="Haircuts, coloring, perms, manicures, pedicures, lashes, brows, waxing, IPL."
     />
-    <meta name="twitter:image" content="/assets/Banner.jpg" />
-    <meta name="twitter:image:src" content="/assets/Banner.jpg" />
+    <meta name="twitter:image" content="/public/favicon.png" />
+    <meta name="twitter:image:src" content="/public/favicon.png" />
     <meta name="twitter:domain" content="kutskurls.com" />
     <meta name="twitter:url" content="https://kutskurls.com/" />
     <link rel="manifest" href="/manifest.json" />
@@ -76,6 +76,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="public/styles.css" />
+    <!-- Elfsight Google Reviews -->
+    <script src="https://elfsightcdn.com/platform.js" async></script>
     <script
       type="module"
       src="https://unpkg.com/@splinetool/viewer@1.10.80/build/spline-viewer.js"
@@ -106,7 +108,7 @@
         "sameAs": ["https://chatgpt.com/g/g-NwIWWtD6r-kurlsbot"],
         "contactPoint": {
           "@type": "ContactPoint",
-          "telephone": "+65-96363537",
+          "telephone": "69097503",
           "contactType": "Customer Service"
         },
         "address": {
@@ -127,8 +129,8 @@
             "Saturday",
             "Sunday"
           ],
-          "opens": "10:00",
-          "closes": "21:00"
+          "opens": "09:30",
+          "closes": "20:30"
         },
         "makesOffer": [
           {
@@ -140,31 +142,34 @@
                 {
                   "@type": "Offer",
                   "name": "Haircut (Men)",
-                  "price": "12.00 - 18.00",
+                  "price": "$20 - $25",
+                  "description": "Kids and adults",
                   "priceCurrency": "SGD"
                 },
                 {
                   "@type": "Offer",
                   "name": "Haircut (Women)",
-                  "price": "20.00 - 28.00",
+                  "price": "$20 - $30",
                   "priceCurrency": "SGD"
                 },
                 {
                   "@type": "Offer",
                   "name": "Wash & Cut (Men)",
-                  "price": "20.00",
+                  "price": "$35",
+                  "description": "Includes cut, wash and styling.",
                   "priceCurrency": "SGD"
                 },
                 {
                   "@type": "Offer",
                   "name": "Wash & Cut (Women)",
-                  "price": "30.00",
+                  "price": "$40 - $48",
+                  "description": "Includes cut, wash and styling.",
                   "priceCurrency": "SGD"
                 },
                 {
                   "@type": "Offer",
-                  "name": "Wash & Blow",
-                  "price": "18.00",
+                  "name": "Wash & Blow & Style",
+                  "price": "$28 - $48",
                   "priceCurrency": "SGD"
                 }
               ]
@@ -178,8 +183,8 @@
               "offers": [
                 {
                   "@type": "Offer",
-                  "name": "Colour (Men)",
-                  "price": "68.00 - 198.00",
+                  "name": "Hair Colour",
+                  "price": "$68 - 198",
                   "priceCurrency": "SGD"
                 },
                 {
@@ -190,8 +195,8 @@
                 },
                 {
                   "@type": "Offer",
-                  "name": "Highlight",
-                  "price": "88.00 - 168.00",
+                  "name": "Hair Highlight",
+                  "price": "$68 - 168",
                   "priceCurrency": "SGD"
                 }
               ]
@@ -269,7 +274,7 @@
                 {
                   "@type": "Offer",
                   "name": "Scalp Treatment",
-                  "price": "98.00 - 298.00",
+                  "price": "$98 - 198",
                   "priceCurrency": "SGD"
                 }
               ]
@@ -284,19 +289,25 @@
                 {
                   "@type": "Offer",
                   "name": "Eyelash Extension",
-                  "price": "48.00 - 98.00",
+                  "price": "$98 - $128",
                   "priceCurrency": "SGD"
                 },
                 {
                   "@type": "Offer",
                   "name": "Eyebrow Tattoo",
-                  "price": "228.00 - 488.00",
+                  "price": "$228 - 488",
+                  "priceCurrency": "SGD"
+                },
+                {
+                  "@type": "Offer",
+                  "name": "Lips Nano Tattoo",
+                  "price": "$388 - 588",
                   "priceCurrency": "SGD"
                 },
                 {
                   "@type": "Offer",
                   "name": "Korean Eyebrow Nano",
-                  "price": "288.00 - 488.00",
+                  "price": "$288 - 488",
                   "priceCurrency": "SGD"
                 }
               ]
@@ -310,14 +321,14 @@
               "offers": [
                 {
                   "@type": "Offer",
-                  "name": "Bikini Hair Removal",
-                  "price": "48.00 - 78.00",
+                  "name": "IPL Bikini Hair Remover",
+                  "price": "$48 - 78",
                   "priceCurrency": "SGD"
                 },
                 {
                   "@type": "Offer",
-                  "name": "Armpit Hair Removal",
-                  "price": "38.00 - 58.00",
+                  "name": "IPL Armpit Hair Remover",
+                  "price": "$38 - 58",
                   "priceCurrency": "SGD"
                 }
               ]
@@ -331,14 +342,14 @@
               "offers": [
                 {
                   "@type": "Offer",
-                  "name": "Paraffin Hand",
-                  "price": "25.00",
+                  "name": "Parrafin Hand",
+                  "price": "$48 - $68",
                   "priceCurrency": "SGD"
                 },
                 {
                   "@type": "Offer",
-                  "name": "Paraffin Leg",
-                  "price": "25.00",
+                  "name": "Parrafin Leg",
+                  "price": "$48 - $68",
                   "priceCurrency": "SGD"
                 }
               ]
@@ -353,25 +364,25 @@
                 {
                   "@type": "Offer",
                   "name": "Waxing Half Hand",
-                  "price": "28.00",
+                  "price": "$38",
                   "priceCurrency": "SGD"
                 },
                 {
                   "@type": "Offer",
                   "name": "Waxing Full Hand",
-                  "price": "50.00",
+                  "price": "$78",
                   "priceCurrency": "SGD"
                 },
                 {
                   "@type": "Offer",
                   "name": "Waxing Half Leg",
-                  "price": "30.00",
+                  "price": "$48",
                   "priceCurrency": "SGD"
                 },
                 {
                   "@type": "Offer",
                   "name": "Waxing Full Leg",
-                  "price": "68.00",
+                  "price": "$98",
                   "priceCurrency": "SGD"
                 }
               ]
@@ -386,37 +397,37 @@
                 {
                   "@type": "Offer",
                   "name": "Classic Manicure",
-                  "price": "25.00",
+                  "price": "$25",
                   "priceCurrency": "SGD"
                 },
                 {
                   "@type": "Offer",
                   "name": "Express Manicure",
-                  "price": "20.00",
+                  "price": "$20",
                   "priceCurrency": "SGD"
                 },
                 {
                   "@type": "Offer",
-                  "name": "Classic Gel Polish Manicure",
-                  "price": "35.00",
+                  "name": "Full Classic Manicure Gel Polish",
+                  "price": "$45",
                   "priceCurrency": "SGD"
                 },
                 {
                   "@type": "Offer",
-                  "name": "Express Gel Polish Manicure",
-                  "price": "18.00",
+                  "name": "Express Gel Polish Mani",
+                  "price": "$35",
                   "priceCurrency": "SGD"
                 },
                 {
                   "@type": "Offer",
-                  "name": "Nail Mask Manicure",
-                  "price": "18.00",
+                  "name": "Nail Mask Mani",
+                  "price": "$20 - $28",
                   "priceCurrency": "SGD"
                 },
                 {
                   "@type": "Offer",
-                  "name": "Spa Manicure",
-                  "price": "48.00",
+                  "name": "Spa Mani",
+                  "price": "$48 - $68",
                   "priceCurrency": "SGD"
                 }
               ]
@@ -431,37 +442,37 @@
                 {
                   "@type": "Offer",
                   "name": "Classic Pedicure",
-                  "price": "35.00",
+                  "price": "$35",
                   "priceCurrency": "SGD"
                 },
                 {
                   "@type": "Offer",
                   "name": "Express Pedicure",
-                  "price": "20.00",
+                  "price": "$20",
                   "priceCurrency": "SGD"
                 },
                 {
                   "@type": "Offer",
-                  "name": "Classic Gel Polish Pedicure",
-                  "price": "48.00",
+                  "name": "Full Classic Pedicure Gel Polish",
+                  "price": "$55",
                   "priceCurrency": "SGD"
                 },
                 {
                   "@type": "Offer",
-                  "name": "Express Gel Polish Pedicure",
-                  "price": "35.00",
+                  "name": "Express Gel Polish Pedi",
+                  "price": "$38",
                   "priceCurrency": "SGD"
                 },
                 {
                   "@type": "Offer",
-                  "name": "Nail Mask Pedicure",
-                  "price": "48.00",
+                  "name": "Nail Mask Pedi",
+                  "price": "$20 - $28",
                   "priceCurrency": "SGD"
                 },
                 {
                   "@type": "Offer",
-                  "name": "Spa Pedicure",
-                  "price": "40.00",
+                  "name": "Spa Pedi",
+                  "price": "$48 / $68",
                   "priceCurrency": "SGD"
                 }
               ]
@@ -475,14 +486,14 @@
               "offers": [
                 {
                   "@type": "Offer",
-                  "name": "Classic Mani Pedi",
-                  "price": "58.00",
+                  "name": "Classic Pedi/Mani",
+                  "price": "$60",
                   "priceCurrency": "SGD"
                 },
                 {
                   "@type": "Offer",
-                  "name": "Express Gel Polish Mani/Pedi",
-                  "price": "65.00",
+                  "name": "Express Gel Polish Mani & Pedi",
+                  "price": "$73",
                   "priceCurrency": "SGD"
                 }
               ]
@@ -497,19 +508,19 @@
                 {
                   "@type": "Offer",
                   "name": "Soak Off Acrylic",
-                  "price": "48.00",
+                  "price": "$48",
                   "priceCurrency": "SGD"
                 },
                 {
                   "@type": "Offer",
                   "name": "Soak Off Hard Gel",
-                  "price": "48.00",
+                  "price": "$48",
                   "priceCurrency": "SGD"
                 },
                 {
                   "@type": "Offer",
                   "name": "Soak Off Gel Polish",
-                  "price": "10.00",
+                  "price": "$15",
                   "priceCurrency": "SGD"
                 }
               ]
@@ -523,32 +534,44 @@
               "offers": [
                 {
                   "@type": "Offer",
-                  "name": "French Gel Polish",
-                  "price": "7.00 - 20.00",
+                  "name": "French",
+                  "price": "$20 - $28",
                   "priceCurrency": "SGD"
                 },
                 {
                   "@type": "Offer",
                   "name": "Gel Change Colour",
-                  "price": "25.00",
+                  "price": "$25",
                   "priceCurrency": "SGD"
                 },
                 {
                   "@type": "Offer",
-                  "name": "Acrylic Extension",
-                  "price": "95.00",
+                  "name": "Gel Extension",
+                  "price": "$80 - $100",
                   "priceCurrency": "SGD"
                 },
                 {
                   "@type": "Offer",
-                  "name": "Acrylic Fill",
-                  "price": "50.00",
+                  "name": "Acrylic Fin-fill",
+                  "price": "$50",
                   "priceCurrency": "SGD"
                 },
                 {
                   "@type": "Offer",
                   "name": "Callus Treatment",
-                  "price": "50.00",
+                  "price": "$38 - $68",
+                  "priceCurrency": "SGD"
+                },
+                {
+                  "@type": "Offer",
+                  "name": "French Gel Polish",
+                  "price": "$20 - $28",
+                  "priceCurrency": "SGD"
+                },
+                {
+                  "@type": "Offer",
+                  "name": "Nail Art",
+                  "price": "$3+",
                   "priceCurrency": "SGD"
                 }
               ]
@@ -572,15 +595,13 @@
     <header class="site-header">
       <div class="container header-inner">
         <a class="branding" href="/" aria-label="Kuts & Kurls home">
-          <img src="assets/Banner.jpg" alt="Kuts & Kurls logo" />
+          <img src="/public/storepictures/banner.png" alt="Kuts & Kurls logo" />
         </a>
         <nav class="nav" aria-label="Primary">
-          <a id="nav-specializations" href="#specializations"
-            >Specializations</a
-          >
-          <a id="nav-services" href="#services">Services</a>
-          <a id="nav-contact" href="#contact">Contact</a>
-          <a id="nav-media" href="#media">Media</a>
+          <a id="nav-specializations" href="#specializations" data-en="Specializations" data-zh="特色">Specializations</a>
+          <a id="nav-services" href="#services" data-en="Services" data-zh="服务项目">Services</a>
+          <a id="nav-contact" href="#contact" data-en="Contact" data-zh="联系">Contact</a>
+          <a id="nav-media" href="#media" data-en="Media" data-zh="媒体">Media</a>
         </nav>
         <button
           id="nav-toggle"
@@ -601,8 +622,10 @@
     </header>
 
     <main>
-      <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.82/build/spline-viewer.js"></script>
-      <spline-viewer hint loading-anim-type="spinner-big-dark" url="https://prod.spline.design/4UOHnuBXVUXfbAdP/scene.splinecode"></spline-viewer>
+      <div id="container">
+        <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.82/build/spline-viewer.js"></script>
+        <spline-viewer hint loading-anim-type="spinner-big-dark" url="https://prod.spline.design/4UOHnuBXVUXfbAdP/scene.splinecode"></spline-viewer>
+      </div>
       </section>
     
 
@@ -611,9 +634,16 @@
           <div class="intro-wrap">
             <div class="intro-head">
               <h2 id="intro-title">About Kuts & Kurls</h2>
-              <p id="intro-text" class="intro-text"></p>
+              <p id="intro-text" class="intro-text" data-en="We're your friendly neighbourhood salon at Roxy Square II. Our experienced stylists and nail artists deliver beautiful results with fair, transparent pricing. From precision haircuts, colour and perms to keratin and scalp care — plus classic and gel manicures, pedicures, lashes, brows, waxing and IPL — we make it easy to look and feel your best every day." data-zh="坐落于 Roxy Square II 的社区沙龙。资深发型师与美甲师，价格透明公道。从精剪、染发、烫发、角蛋白与头皮护理，到经典/凝胶美甲美足、睫毛眉形、蜜蜡脱毛与 IPL，一站式为您打造日常的精致与自信。">We're your friendly neighbourhood salon at Roxy Square II. Our experienced stylists and nail artists deliver beautiful results with fair, transparent pricing. From precision haircuts, colour and perms to keratin and scalp care — plus classic and gel manicures, pedicures, lashes, brows, waxing and IPL — we make it easy to look and feel your best every day.</p>
             </div>
           </div>
+        </div>
+      </section>
+
+      <!-- Elfsight Google Reviews Widget -->
+      <section class="section reveal">
+        <div class="container">
+          <div class="elfsight-app-f6163b70-01a7-4c6a-a70f-4a958974424c" data-elfsight-app-lazy></div>
         </div>
       </section>
 
@@ -740,15 +770,343 @@
 
       <section id="specializations" class="section reveal">
         <div class="container">
-          <h2 id="h2-specializations">Specializations</h2>
-          <div id="specializations-list" class="cards"></div>
+          <h2 id="h2-specializations" data-en="Specializations" data-zh="特色">Specializations</h2>
+          <div id="specializations-list" class="cards">
+            <div class="card">
+              <h3 class="card-title">
+                <span class="icon">💇‍♂️</span> <span data-en="Hair & Nail Services" data-zh="美发与美甲">Hair & Nail Services</span>
+              </h3>
+              <p class="card-text" data-en="Cuts, coloring, perms, manicures and pedicures." data-zh="剪染烫，以及手足护理。">Cuts, coloring, perms, manicures and pedicures.</p>
+            </div>
+            <div class="card">
+              <h3 class="card-title">
+                <span class="icon">✨</span> <span data-en="Beauty Add‑ons" data-zh="美妆加项">Beauty Add‑ons</span>
+              </h3>
+              <p class="card-text" data-en="Lashes, brows, waxing and IPL services." data-zh="美睫、美眉、脱毛与IPL。">Lashes, brows, waxing and IPL services.</p>
+            </div>
+          </div>
         </div>
       </section>
 
       <section id="services" class="section reveal">
         <div class="container">
-          <h2 id="h2-services">Services</h2>
-          <div id="services-content" class="service-groups"></div>
+          <h2 id="h2-services" data-en="Services" data-zh="服务项目">Services</h2>
+          <div id="services-content" class="service-groups">
+            <!-- Basic Hair Services -->
+            <section class="service-group">
+              <h3 class="service-title"><span class="icon">💇‍♂️</span> <span data-en="Basic Hair Services" data-zh="基础美发服务">Basic Hair Services</span></h3>
+              <div class="service-list">
+                <div class="service-item">
+                  <div class="service-name"><span class="icon sm">·</span> <span data-en="Haircut (Men)" data-zh="男士剪发">Haircut (Men)</span> <span class="service-note" data-en="Kids and adults" data-zh="儿童和成人">(Kids and adults)</span></div>
+                  <div class="service-price"><span class="price-current">$20 - $25</span></div>
+                </div>
+                <div class="service-item">
+                  <div class="service-name"><span class="icon sm">·</span> <span data-en="Haircut (Women)" data-zh="女士剪发">Haircut (Women)</span></div>
+                  <div class="service-price"><span class="price-current">$20 - $30</span></div>
+                </div>
+                <div class="service-item">
+                  <div class="service-name"><span class="icon sm">·</span> <span data-en="Wash & Cut (Men)" data-zh="男士洗剪">Wash & Cut (Men)</span> <span class="service-note" data-en="Includes cut, wash and styling." data-zh="包括剪发、洗头和造型。">(Includes cut, wash and styling.)</span></div>
+                  <div class="service-price"><span class="price-current">$35</span></div>
+                </div>
+                <div class="service-item">
+                  <div class="service-name"><span class="icon sm">·</span> <span data-en="Wash & Cut (Women)" data-zh="女士洗剪">Wash & Cut (Women)</span> <span class="service-note" data-en="Includes cut, wash and styling." data-zh="包括剪发、洗头和造型。">(Includes cut, wash and styling.)</span></div>
+                  <div class="service-price"><span class="price-current">$40 - $48</span></div>
+                </div>
+                <div class="service-item">
+                  <div class="service-name"><span class="icon sm">·</span> <span data-en="Wash & Blow & Style" data-zh="洗吹造型">Wash & Blow & Style</span></div>
+                  <div class="service-price"><span class="price-current">$28 - $48</span></div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Hair Coloring -->
+            <section class="service-group">
+              <h3 class="service-title"><span class="icon">🎨</span> <span data-en="Hair Coloring" data-zh="染发">Hair Coloring</span></h3>
+              <div class="service-list">
+                <div class="service-item">
+                  <div class="service-name"><span class="icon sm">·</span> <span data-en="Hair Colour" data-zh="染发">Hair Colour</span></div>
+                  <div class="service-price"><span class="price-current">$68 - 198</span></div>
+                </div>
+                <div class="service-item">
+                  <div class="service-name"><span class="icon sm">·</span> <span data-en="Non-ammonia Coloring" data-zh="无氨染发">Non-ammonia Coloring</span></div>
+                  <div class="service-price"><span class="price-current">$108 - 198</span></div>
+                </div>
+                <div class="service-item">
+                  <div class="service-name"><span class="icon sm">·</span> <span data-en="Hair Highlight" data-zh="挑染">Hair Highlight</span></div>
+                  <div class="service-price"><span class="price-current">$68 - 168</span></div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Perming -->
+            <section class="service-group">
+              <h3 class="service-title"><span class="icon">🌀</span> <span data-en="Perming" data-zh="烫发">Perming</span></h3>
+              <div class="service-list">
+                <div class="service-item">
+                  <div class="service-name"><span class="icon sm">·</span> <span data-en="Soft Rebonding" data-zh="柔顺离子烫">Soft Rebonding</span></div>
+                  <div class="service-price"><span class="price-current">$152 - 248</span></div>
+                </div>
+                <div class="service-item">
+                  <div class="service-name"><span class="icon sm">·</span> <span data-en="Steambond" data-zh="蒸汽离子烫">Steambond</span></div>
+                  <div class="service-price"><span class="price-current">$228 - 328</span></div>
+                </div>
+                <div class="service-item">
+                  <div class="service-name"><span class="icon sm">·</span> <span data-en="Cool Perm" data-zh="冷烫">Cool Perm</span></div>
+                  <div class="service-price"><span class="price-current">$118 - 158</span></div>
+                </div>
+                <div class="service-item">
+                  <div class="service-name"><span class="icon sm">·</span> <span data-en="Digital Perm" data-zh="数码烫">Digital Perm</span></div>
+                  <div class="service-price"><span class="price-current">$228 - 288</span></div>
+                </div>
+                <div class="service-item">
+                  <div class="service-name"><span class="icon sm">·</span> <span data-en="Korean Namo Perm" data-zh="韩式纳米烫">Korean Namo Perm</span></div>
+                  <div class="service-price"><span class="price-current">$248 - 328</span></div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Hair Treatments -->
+            <section class="service-group">
+              <h3 class="service-title"><span class="icon">🧴</span> <span data-en="Hair Treatments" data-zh="头发护理">Hair Treatments</span></h3>
+              <div class="service-list">
+                <div class="service-item">
+                  <div class="service-name"><span class="icon sm">·</span> <span data-en="Migration Hair Treatment" data-zh="迁移修护护理">Migration Hair Treatment</span></div>
+                  <div class="service-price"><span class="price-current">$68 - 108</span></div>
+                </div>
+                <div class="service-item">
+                  <div class="service-name"><span class="icon sm">·</span> <span data-en="Repair Hair Treatment" data-zh="修复护理">Repair Hair Treatment</span></div>
+                  <div class="service-price"><span class="price-current">$128 - 168</span></div>
+                </div>
+                <div class="service-item">
+                  <div class="service-name"><span class="icon sm">·</span> <span data-en="Nano Hair Treatment" data-zh="纳米护理">Nano Hair Treatment</span></div>
+                  <div class="service-price"><span class="price-current">$228 - 288</span></div>
+                </div>
+                <div class="service-item">
+                  <div class="service-name"><span class="icon sm">·</span> <span data-en="Keratin Hair Treatment" data-zh="角蛋白护理">Keratin Hair Treatment</span></div>
+                  <div class="service-price"><span class="price-current">$268 - 358</span></div>
+                </div>
+                <div class="service-item">
+                  <div class="service-name"><span class="icon sm">·</span> <span data-en="Scalp Treatment" data-zh="头皮护理">Scalp Treatment</span></div>
+                  <div class="service-price"><span class="price-current">$98 - 198</span></div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Eyelash & Eyebrow Services -->
+            <section class="service-group">
+              <h3 class="service-title"><span class="icon">✨</span> <span data-en="Eyelash & Eyebrow Services" data-zh="美睫与美眉">Eyelash & Eyebrow Services</span></h3>
+              <div class="service-list">
+                <div class="service-item">
+                  <div class="service-name"><span class="icon sm">·</span> <span data-en="Eyelash Extension" data-zh="美睫嫁接">Eyelash Extension</span></div>
+                  <div class="service-price"><span class="price-current">$98 - $128</span></div>
+                </div>
+                <div class="service-item">
+                  <div class="service-name"><span class="icon sm">·</span> <span data-en="Eyelash Extension (Bottom list)" data-zh="美睫嫁接（底部）">Eyelash Extension (Bottom list)</span></div>
+                  <div class="service-price"><span class="price-current">$48 - 98</span></div>
+                </div>
+                <div class="service-item">
+                  <div class="service-name"><span class="icon sm">·</span> <span data-en="Eyebrow Tattoo" data-zh="纹眉">Eyebrow Tattoo</span></div>
+                  <div class="service-price"><span class="price-current">$228 - 488</span></div>
+                </div>
+                <div class="service-item">
+                  <div class="service-name"><span class="icon sm">·</span> <span data-en="Lips Nano Tattoo" data-zh="纳米唇">Lips Nano Tattoo</span></div>
+                  <div class="service-price"><span class="price-current">$388 - 588</span></div>
+                </div>
+                <div class="service-item">
+                  <div class="service-name"><span class="icon sm">·</span> <span data-en="Korean Eyebrow Nano" data-zh="韩式纳米眉">Korean Eyebrow Nano</span></div>
+                  <div class="service-price"><span class="price-current">$288 - 488</span></div>
+                </div>
+              </div>
+            </section>
+
+            <!-- IPL Services -->
+            <section class="service-group">
+              <h3 class="service-title"><span class="icon">💫</span> <span data-en="IPL Services" data-zh="IPL 光子">IPL Services</span></h3>
+              <div class="service-list">
+                <div class="service-item">
+                  <div class="service-name"><span class="icon sm">·</span> <span data-en="IPL Bikini Hair Remover" data-zh="比基尼脱毛">IPL Bikini Hair Remover</span></div>
+                  <div class="service-price"><span class="price-current">$48 - 78</span></div>
+                </div>
+                <div class="service-item">
+                  <div class="service-name"><span class="icon sm">·</span> <span data-en="IPL Armpit Hair Remover" data-zh="腋下脱毛">IPL Armpit Hair Remover</span></div>
+                  <div class="service-price"><span class="price-current">$38 - 58</span></div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Paraffin Treatments -->
+            <section class="service-group">
+              <h3 class="service-title"><span class="icon">🕯️</span> <span data-en="Paraffin Treatments" data-zh="石蜡护理">Paraffin Treatments</span></h3>
+              <div class="service-list">
+                <div class="service-item">
+                  <div class="service-name"><span class="icon sm">·</span> <span data-en="Parrafin Hand" data-zh="手部石蜡护理">Parrafin Hand</span></div>
+                  <div class="service-price"><span class="price-current">$48 - $68</span></div>
+                </div>
+                <div class="service-item">
+                  <div class="service-name"><span class="icon sm">·</span> <span data-en="Parrafin Leg" data-zh="腿部石蜡护理">Parrafin Leg</span></div>
+                  <div class="service-price"><span class="price-current">$48 - $68</span></div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Waxing Services -->
+            <section class="service-group">
+              <h3 class="service-title"><span class="icon">🧴</span> <span data-en="Waxing Services" data-zh="蜜蜡脱毛">Waxing Services</span></h3>
+              <div class="service-list">
+                <div class="service-item">
+                  <div class="service-name"><span class="icon sm">·</span> <span data-en="Waxing Half Hand" data-zh="半臂脱毛">Waxing Half Hand</span></div>
+                  <div class="service-price"><span class="price-current">$38</span></div>
+                </div>
+                <div class="service-item">
+                  <div class="service-name"><span class="icon sm">·</span> <span data-en="Waxing Full Hand" data-zh="全臂脱毛">Waxing Full Hand</span></div>
+                  <div class="service-price"><span class="price-current">$78</span></div>
+                </div>
+                <div class="service-item">
+                  <div class="service-name"><span class="icon sm">·</span> <span data-en="Waxing Half Leg" data-zh="半腿脱毛">Waxing Half Leg</span></div>
+                  <div class="service-price"><span class="price-current">$48</span></div>
+                </div>
+                <div class="service-item">
+                  <div class="service-name"><span class="icon sm">·</span> <span data-en="Waxing Full Leg" data-zh="全腿脱毛">Waxing Full Leg</span></div>
+                  <div class="service-price"><span class="price-current">$98</span></div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Manicure Services -->
+            <section class="service-group">
+              <h3 class="service-title"><span class="icon">💅</span> <span data-en="Manicure Services" data-zh="手部美甲">Manicure Services</span></h3>
+              <div class="service-list">
+                <div class="service-item">
+                  <div class="service-name"><span class="icon sm">·</span> <span data-en="Classic Manicure" data-zh="经典手部护理">Classic Manicure</span></div>
+                  <div class="service-price"><span class="price-current">$25</span></div>
+                </div>
+                <div class="service-item">
+                  <div class="service-name"><span class="icon sm">·</span> <span data-en="Express Manicure" data-zh="快捷手部护理">Express Manicure</span></div>
+                  <div class="service-price"><span class="price-current">$20</span></div>
+                </div>
+                <div class="service-item">
+                  <div class="service-name"><span class="icon sm">·</span> <span data-en="Full Classic Manicure Gel Polish" data-zh="全套经典凝胶手部">Full Classic Manicure Gel Polish</span></div>
+                  <div class="service-price"><span class="price-current">$45</span></div>
+                </div>
+                <div class="service-item">
+                  <div class="service-name"><span class="icon sm">·</span> <span data-en="Express Gel Polish Mani" data-zh="快捷凝胶手部">Express Gel Polish Mani</span></div>
+                  <div class="service-price"><span class="price-current">$35</span></div>
+                </div>
+                <div class="service-item">
+                  <div class="service-name"><span class="icon sm">·</span> <span data-en="Nail Mask Mani" data-zh="指膜手部护理">Nail Mask Mani</span></div>
+                  <div class="service-price"><span class="price-current">$20 - $28</span></div>
+                </div>
+                <div class="service-item">
+                  <div class="service-name"><span class="icon sm">·</span> <span data-en="Spa Mani" data-zh="SPA 手部护理">Spa Mani</span></div>
+                  <div class="service-price"><span class="price-current">$48 - $68</span></div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Pedicure Services -->
+            <section class="service-group">
+              <h3 class="service-title"><span class="icon">💅</span> <span data-en="Pedicure Services" data-zh="足部美甲">Pedicure Services</span></h3>
+              <div class="service-list">
+                <div class="service-item">
+                  <div class="service-name"><span class="icon sm">·</span> <span data-en="Classic Pedicure" data-zh="经典足部护理">Classic Pedicure</span></div>
+                  <div class="service-price"><span class="price-current">$35</span></div>
+                </div>
+                <div class="service-item">
+                  <div class="service-name"><span class="icon sm">·</span> <span data-en="Express Pedicure" data-zh="快捷足部护理">Express Pedicure</span></div>
+                  <div class="service-price"><span class="price-current">$20</span></div>
+                </div>
+                <div class="service-item">
+                  <div class="service-name"><span class="icon sm">·</span> <span data-en="Full Classic Pedicure Gel Polish" data-zh="全套经典凝胶足部">Full Classic Pedicure Gel Polish</span></div>
+                  <div class="service-price"><span class="price-current">$55</span></div>
+                </div>
+                <div class="service-item">
+                  <div class="service-name"><span class="icon sm">·</span> <span data-en="Express Gel Polish Pedi" data-zh="快捷凝胶足部">Express Gel Polish Pedi</span></div>
+                  <div class="service-price"><span class="price-current">$38</span></div>
+                </div>
+                <div class="service-item">
+                  <div class="service-name"><span class="icon sm">·</span> <span data-en="Nail Mask Pedi" data-zh="足部指膜护理">Nail Mask Pedi</span></div>
+                  <div class="service-price"><span class="price-current">$20 - $28</span></div>
+                </div>
+                <div class="service-item">
+                  <div class="service-name"><span class="icon sm">·</span> <span data-en="Spa Pedi" data-zh="SPA 足部护理">Spa Pedi</span></div>
+                  <div class="service-price"><span class="price-current">$48 / $68</span></div>
+                </div>
+                <div class="service-item">
+                  <div class="service-name"><span class="icon sm">·</span> <span data-en="Pedicure for Man" data-zh="男士足部护理">Pedicure for Man</span></div>
+                  <div class="service-price"><span class="price-current">$40</span></div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Combo Services -->
+            <section class="service-group">
+              <h3 class="service-title"><span class="icon">💅</span> <span data-en="Combo Services" data-zh="组合服务">Combo Services</span></h3>
+              <div class="service-list">
+                <div class="service-item">
+                  <div class="service-name"><span class="icon sm">·</span> <span data-en="Classic Pedi/Mani" data-zh="经典手足护理">Classic Pedi/Mani</span></div>
+                  <div class="service-price"><span class="price-current">$60</span></div>
+                </div>
+                <div class="service-item">
+                  <div class="service-name"><span class="icon sm">·</span> <span data-en="Express Gel Polish Mani & Pedi" data-zh="快捷凝胶手足">Express Gel Polish Mani & Pedi</span></div>
+                  <div class="service-price"><span class="price-current">$73</span></div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Soak Off Services -->
+            <section class="service-group">
+              <h3 class="service-title"><span class="icon">🧴</span> <span data-en="Soak Off Services" data-zh="卸甲服务">Soak Off Services</span></h3>
+              <div class="service-list">
+                <div class="service-item">
+                  <div class="service-name"><span class="icon sm">·</span> <span data-en="Soak Off Acrylic" data-zh="卸丙烯甲">Soak Off Acrylic</span></div>
+                  <div class="service-price"><span class="price-current">$48</span></div>
+                </div>
+                <div class="service-item">
+                  <div class="service-name"><span class="icon sm">·</span> <span data-en="Soak Off Hard Gel" data-zh="卸硬胶">Soak Off Hard Gel</span></div>
+                  <div class="service-price"><span class="price-current">$48</span></div>
+                </div>
+                <div class="service-item">
+                  <div class="service-name"><span class="icon sm">·</span> <span data-en="Soak Off Gel Polish" data-zh="卸凝胶指甲油">Soak Off Gel Polish</span></div>
+                  <div class="service-price"><span class="price-current">$15</span></div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Other Services -->
+            <section class="service-group">
+              <h3 class="service-title"><span class="icon">✨</span> <span data-en="Other Services" data-zh="其他服务">Other Services</span></h3>
+              <div class="service-list">
+                <div class="service-item">
+                  <div class="service-name"><span class="icon sm">·</span> <span data-en="French" data-zh="法式">French</span></div>
+                  <div class="service-price"><span class="price-current">$20 - $28</span></div>
+                </div>
+                <div class="service-item">
+                  <div class="service-name"><span class="icon sm">·</span> <span data-en="French Gel Polish" data-zh="法式凝胶">French Gel Polish</span></div>
+                  <div class="service-price"><span class="price-current">$20 - $28</span></div>
+                </div>
+                <div class="service-item">
+                  <div class="service-name"><span class="icon sm">·</span> <span data-en="Gel Change Colour" data-zh="凝胶换色">Gel Change Colour</span></div>
+                  <div class="service-price"><span class="price-current">$25</span></div>
+                </div>
+                <div class="service-item">
+                  <div class="service-name"><span class="icon sm">·</span> <span data-en="Gel Extension" data-zh="凝胶延长">Gel Extension</span></div>
+                  <div class="service-price"><span class="price-current">$80 - $100</span></div>
+                </div>
+                <div class="service-item">
+                  <div class="service-name"><span class="icon sm">·</span> <span data-en="Acrylic Fin-fill" data-zh="丙烯补甲">Acrylic Fin-fill</span></div>
+                  <div class="service-price"><span class="price-current">$50</span></div>
+                </div>
+                <div class="service-item">
+                  <div class="service-name"><span class="icon sm">·</span> <span data-en="Callus Treatment" data-zh="老茧护理">Callus Treatment</span></div>
+                  <div class="service-price"><span class="price-current">$38 - $68</span></div>
+                </div>
+                <div class="service-item">
+                  <div class="service-name"><span class="icon sm">·</span> <span data-en="Nail Art" data-zh="美甲图案">Nail Art</span></div>
+                  <div class="service-price"><span class="price-current">$3+</span></div>
+                </div>
+              </div>
+            </section>
+          </div>
         </div>
       </section>
 
@@ -756,8 +1114,16 @@
 
       <section id="contact" class="section reveal">
         <div class="container">
-          <h2 id="h2-contact">Contact</h2>
-          <div id="contact-info" class="contact"></div>
+          <h2 id="h2-contact" data-en="Contact" data-zh="联系">Contact</h2>
+          <div id="contact-info" class="contact">
+            <div class="contact-phones">
+              <a href="tel:69097503" class="contact-phone">69097503</a>
+              <a href="https://wa.me/6596363537" class="contact-whatsapp" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+            </div>
+            <div class="contact-address">50 East Coast Rd, Roxy Sq II, Singapore 428769</div>
+            <div class="contact-unit">#01-135</div>
+            <div class="contact-hours">Open daily 9:30am – 8:30pm</div>
+          </div>
           <div class="map-embed">
             <iframe
               src="https://www.google.com/maps?q=50%20East%20Coast%20Rd%2C%20%2301-135%2C%20Roxy%20Sq%20II%2C%20Singapore%20428769&output=embed"
@@ -774,8 +1140,45 @@
 
       <section id="media" class="section reveal">
         <div class="container">
-          <h2 id="h2-media">Media</h2>
-          <div id="media-grid" class="media-grid"></div>
+          <h2 id="h2-media" data-en="Media" data-zh="媒体">Media</h2>
+          <div id="media-grid" class="media-grid">
+            <div class="media-item">
+              <img src="/public/storepictures/1.jpeg" alt="store front" loading="lazy" />
+            </div>
+            <div class="media-item">
+              <img src="/public/storepictures/2.webp" alt="store interior" loading="lazy" />
+            </div>
+            <div class="media-item">
+              <img src="/public/storepictures/3.webp" alt="products" loading="lazy" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery" class="section reveal">
+        <div class="container">
+          <h2>Gallery</h2>
+          <p class="gallery-subtitle">Tap / click to expand</p>
+          <div id="gallery-grid" class="gallery-grid">
+            <div class="gallery-item"><img src="/public/images/1.jpeg" alt="Gallery image 1" loading="lazy" /></div>
+            <div class="gallery-item"><img src="/public/images/2.jpeg" alt="Gallery image 2" loading="lazy" /></div>
+            <div class="gallery-item"><img src="/public/images/4.jpeg" alt="Gallery image 4" loading="lazy" /></div>
+            <div class="gallery-item"><img src="/public/images/5.jpeg" alt="Gallery image 5" loading="lazy" /></div>
+            <div class="gallery-item"><img src="/public/images/6.jpeg" alt="Gallery image 6" loading="lazy" /></div>
+            <div class="gallery-item"><img src="/public/images/7.jpeg" alt="Gallery image 7" loading="lazy" /></div>
+            <div class="gallery-item"><img src="/public/images/8.jpeg" alt="Gallery image 8" loading="lazy" /></div>
+            <div class="gallery-item"><img src="/public/images/9.jpeg" alt="Gallery image 9" loading="lazy" /></div>
+            <div class="gallery-item"><img src="/public/images/10.jpeg" alt="Gallery image 10" loading="lazy" /></div>
+            <div class="gallery-item"><img src="/public/images/11.jpeg" alt="Gallery image 11" loading="lazy" /></div>
+            <div class="gallery-item"><img src="/public/images/12.jpeg" alt="Gallery image 12" loading="lazy" /></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Elfsight Facebook Feed Widget -->
+      <section class="section reveal">
+        <div class="container">
+          <div class="elfsight-app-20e00fc1-2e4f-4a84-8bf2-83d05934c7c8" data-elfsight-app-lazy></div>
         </div>
       </section>
     </main>
@@ -783,17 +1186,15 @@
     <footer class="site-footer">
       <div class="container">
         <nav class="footer-nav" aria-label="Footer">
-          <a id="fnav-specializations" href="#specializations"
-            >Specializations</a
-          >
-          <a id="fnav-services" href="#services">Services</a>
-          <a id="fnav-contact" href="#contact">Contact</a>
-          <a id="fnav-media" href="#media">Media</a>
+          <a id="fnav-specializations" href="#specializations" data-en="Specializations" data-zh="特色">Specializations</a>
+          <a id="fnav-services" href="#services" data-en="Services" data-zh="服务项目">Services</a>
+          <a id="fnav-contact" href="#contact" data-en="Contact" data-zh="联系">Contact</a>
+          <a id="fnav-media" href="#media" data-en="Media" data-zh="媒体">Media</a>
         </nav>
         <small>
           <span id="footer-name">Kuts & Kurls</span>
           <span>｜</span>
-          <span id="footer-unit"></span>
+          <span id="footer-unit">#01-135</span>
         </small>
       </div>
     </footer>
@@ -805,12 +1206,10 @@
           ×
         </button>
         <nav class="mobile-nav" aria-label="Mobile Primary">
-          <a id="mnav-specializations" href="#specializations"
-            >Specializations</a
-          >
-          <a id="mnav-services" href="#services">Services</a>
-          <a id="mnav-contact" href="#contact">Contact</a>
-          <a id="mnav-media" href="#media">Media</a>
+          <a id="mnav-specializations" href="#specializations" data-en="Specializations" data-zh="特色">Specializations</a>
+          <a id="mnav-services" href="#services" data-en="Services" data-zh="服务项目">Services</a>
+          <a id="mnav-contact" href="#contact" data-en="Contact" data-zh="联系">Contact</a>
+          <a id="mnav-media" href="#media" data-en="Media" data-zh="媒体">Media</a>
         </nav>
       </div>
     </div>
@@ -829,28 +1228,7 @@
       gtag("config", "G-LH81QNLPL7");
     </script>
 
-    <!-- Setmore booking widget -->
-    <script
-      id="setmore_script"
-      type="text/javascript"
-      src="https://storage.googleapis.com/fullintegration-live/webComponentAppListing/Container/setmoreIframeLive.js"
-    ></script>
-    <a
-      style="
-        float: none;
-        position: fixed;
-        right: -2px;
-        top: 25%;
-        display: block;
-        z-index: 20000;
-      "
-      id="Setmore_button_iframe"
-      href="https://booking.setmore.com/scheduleappointment/07e47248-f200-437a-852e-1861e8282167"
-      ><img
-        border="none"
-        src="https://storage.googleapis.com/full-assets/setmore/images/1.0/Calendar/Setmore-Book-Now.png"
-        alt="Book an appointment with Kuts & Kurls using Setmore"
-    /></a>
+    
 
     <!-- Chat button linking to KurlsBot -->
     <button
@@ -873,13 +1251,25 @@
       Chat with our AI bot 🤖
     </button>
 
-    <!-- Unavailable overlay -->
-    <div id="site-unavailable-overlay" role="dialog" aria-live="assertive" aria-label="Site unavailable">
-      <div class="notice">
-        <h1>Website is unavailable</h1>
-        <p>Please contact the administrator.</p>
-      </div>
+    <!-- Floating WhatsApp CTA -->
+    <a
+      href="https://wa.me/6596363537"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="WhatsApp us"
+      class="floating-whatsapp"
+      title="WhatsApp us"
+    >
+      WhatsApp
+    </a>
+ 
+    <!-- Lightbox for gallery -->
+    <div id="lightbox" class="lightbox" hidden>
+      <button id="lightbox-close" class="lightbox-close" aria-label="Close">×</button>
+      <img id="lightbox-img" alt="Gallery image" />
     </div>
+ 
+    
 
     <script type="module" src="public/app.js"></script>
   </body>
