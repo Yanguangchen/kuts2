@@ -16,10 +16,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  overflow-y: auto;
   max-width: 100vw;
-  -webkit-overflow-scrolling: touch;
-  touch-action: pan-y;
 }
 
 button {
@@ -32,20 +29,17 @@ body {
   color: var(--fg);
   line-height: 1.6;
   overflow-x: hidden;
-  overflow-y: auto !important;
-  -webkit-overflow-scrolling: touch;
-  touch-action: pan-y;
+  overflow-y: auto;
+}
+html {
+  height: auto;
+  overflow-y: auto;
 }
 img, video, iframe, svg {
   max-width: 100%;
   height: auto;
 }
-main {
-  overflow-x: hidden;
-  overflow-y: visible;
-  max-width: 100vw;
-  -webkit-overflow-scrolling: touch;
-}
+
 .smooth-scroll {
   scroll-behavior: smooth;
 }
@@ -1205,57 +1199,19 @@ h2 {
   }
 }
 
-/* Ensure scrolling works even when elements are loading */
-.elfsight-app,
-.elfsight-app *,
-spline-viewer,
-spline-viewer * {
-  pointer-events: auto;
-  touch-action: pan-y;
-}
-
 /* Prevent loading overlays from blocking scroll */
 [class*="loading"],
 [class*="spinner"],
 [data-loading] {
   pointer-events: none;
-  touch-action: pan-y;
-}
-
-/* Ensure body can always scroll, even during loading */
-body.loading,
-html.loading {
-  overflow-y: auto !important;
-  -webkit-overflow-scrolling: touch;
-}
-
-/* Force scrolling to be enabled - override any inline styles */
-html {
-  overflow-y: auto !important;
-  -webkit-overflow-scrolling: touch !important;
-  touch-action: pan-y !important;
-}
-
-body:not(.menu-open) {
-  overflow-y: auto !important;
-  overflow-x: hidden !important;
-  -webkit-overflow-scrolling: touch !important;
-  touch-action: pan-y !important;
-  position: relative !important;
 }
 
 /* Only disable scrolling when menu is explicitly open */
 body.menu-open {
-  overflow: hidden !important;
+  overflow: hidden;
 }
 
-/* Ensure main content can scroll */
-main {
-  overflow-y: visible !important;
-  overflow-x: hidden !important;
-  position: relative !important;
-  min-height: 100vh;
-}
+
 
 /* Prevent any fixed elements from blocking touch */
 * {
@@ -1265,5 +1221,4 @@ main {
 /* Ensure sections don't block scrolling */
 .section {
   position: relative;
-  touch-action: pan-y;
 }
