@@ -4,7 +4,7 @@ export const salonData = {
     website: "https://kutskurls.com/",
     name: "Kuts & Kurls",
     namePinyin: "Kuts & Kurls",
-    unitNumber: "#01-135",
+    unitNumber: "#02-21",
     address: "50 East Coast Rd, Roxy Sq II, Singapore 428769",
     tagline: "Hair · Nails · Beauty",
     taglineTranslation: "Haircuts, Coloring, Perms, Manicure, Pedicure",
