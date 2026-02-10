@@ -17,7 +17,7 @@ export const salonData = {
       { icon: "✨", zh: "睫毛眉形与护理", en: "Lashes and brows" },
       { icon: "🧴", zh: "护理与焕肤项目", en: "Treatments and care" }
     ],
-    openingHours: "9:30am – 8:30pm",
+    openingHours: "9:00am – 9:00pm",
   },
   contactInfo: {
     primaryContact: "Customer Service",
