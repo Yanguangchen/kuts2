@@ -217,6 +217,40 @@ function setViewportHeightVar() {
   document.documentElement.style.setProperty('--vh', `${vh}px`);
 }
 
+// Special promotions modal
+function initSpecialPromotionsModal() {
+  const modal = document.getElementById('special-promotions-modal');
+  const closeBtn = document.getElementById('special-promotions-close');
+  if (!modal) return;
+
+  function closeModal() {
+    modal.setAttribute('hidden', '');
+    document.body.style.overflow = '';
+  }
+
+  function openModal() {
+    modal.removeAttribute('hidden');
+    document.body.style.overflow = 'hidden';
+  }
+
+  if (closeBtn) {
+    closeBtn.addEventListener('click', closeModal);
+  }
+
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) closeModal();
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && !modal.hasAttribute('hidden')) {
+      closeModal();
+    }
+  });
+
+  // Ensure modal opens each time the page loads.
+  openModal();
+}
+
 // Initialize everything
 function init() {
   applyLanguage();
@@ -227,6 +261,7 @@ function init() {
   initHeroProgress();
   animateHeroTypography();
   setViewportHeightVar();
+  initSpecialPromotionsModal();
   
   // Language button handlers
   const enBtn = document.getElementById("lang-en");

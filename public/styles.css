@@ -792,6 +792,85 @@ h2 {
   font-size: 18px;
 }
 
+/* Special promotions modal */
+.promo-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 45000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.58);
+  backdrop-filter: blur(6px) saturate(120%);
+  -webkit-backdrop-filter: blur(6px) saturate(120%);
+}
+.promo-modal[hidden] {
+  display: none;
+}
+.promo-modal-card {
+  position: relative;
+  width: min(560px, 100%);
+  background: #fffdf7;
+  color: #1a1a1a;
+  border: 1px solid rgba(139, 117, 70, 0.32);
+  border-radius: 16px;
+  padding: 24px 22px 20px;
+  box-shadow: 0 12px 42px rgba(0, 0, 0, 0.25), 0 0 0 1px var(--ring) inset;
+}
+.promo-modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: #ffffff;
+  color: #1a1a1a;
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+}
+.promo-modal-close:hover {
+  border-color: var(--brand);
+}
+.promo-modal-kicker {
+  margin: 0 0 6px;
+  color: var(--brand);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+#promo-modal-title {
+  margin: 0 0 14px;
+  font-size: 30px;
+  line-height: 1.2;
+}
+.promo-modal-items {
+  display: grid;
+  gap: 10px;
+}
+.promo-modal-item {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 12px;
+  align-items: center;
+  border: 1px solid rgba(139, 117, 70, 0.22);
+  border-radius: 12px;
+  background: #ffffff;
+  padding: 12px;
+}
+.promo-modal-name {
+  font-size: 15px;
+}
+.promo-modal-price {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--brand);
+}
+
 /* Utility for hiding gallery items when collapsed */
 .is-hidden { display: none !important; }
 
