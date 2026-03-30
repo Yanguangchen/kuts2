@@ -112,481 +112,179 @@
       {
         "@context": "https://schema.org",
         "@type": "HairSalon",
+        "@id": "https://kutskurls.com/#salon",
         "name": "Kuts & Kurls",
         "url": "https://kutskurls.com/",
+        "telephone": "+6569097503",
+        "image": "https://kutskurls.com/public/storepictures/banner.png",
+        "logo": "https://kutskurls.com/public/favicon.png",
+        "priceRange": "$$",
+        "paymentAccepted": "Cash, PayNow, NETS, Credit Card",
+        "currenciesAccepted": "SGD",
         "sameAs": ["https://chatgpt.com/g/g-NwIWWtD6r-kurlsbot"],
         "contactPoint": {
           "@type": "ContactPoint",
-          "telephone": "69097503",
-          "contactType": "Customer Service"
+          "telephone": "+6569097503",
+          "contactType": "customer service",
+          "areaServed": "SG",
+          "availableLanguage": ["English", "Chinese", "Vietnamese"]
         },
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "50 East Coast Rd, #01-135, Roxy Sq II",
+          "streetAddress": "50 East Coast Rd, #01-135, Roxy Square II",
           "addressLocality": "Singapore",
           "postalCode": "428769",
           "addressCountry": "SG"
         },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 1.3039,
+          "longitude": 103.9045
+        },
         "openingHoursSpecification": {
           "@type": "OpeningHoursSpecification",
-          "dayOfWeek": [
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday",
-            "Saturday",
-            "Sunday"
-          ],
-          "opens": "09:00",
-          "closes": "21:00"
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+          "opens": "09:30",
+          "closes": "20:30"
         },
-        "makesOffer": [
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Kuts & Kurls Services",
+          "itemListElement": [
+            {
+              "@type": "OfferCatalog",
               "name": "Basic Hair Services",
-              "offers": [
-                {
-                  "@type": "Offer",
-                  "name": "Haircut (Men)",
-                  "price": "$20 - $25",
-                  "description": "Kids and adults",
-                  "priceCurrency": "SGD"
-                },
-                {
-                  "@type": "Offer",
-                  "name": "Haircut (Women)",
-                  "price": "$20 - $30",
-                  "priceCurrency": "SGD"
-                },
-                {
-                  "@type": "Offer",
-                  "name": "Wash & Cut (Men)",
-                  "price": "$35",
-                  "description": "Includes cut, wash and styling.",
-                  "priceCurrency": "SGD"
-                },
-                {
-                  "@type": "Offer",
-                  "name": "Wash & Cut (Women)",
-                  "price": "$40 - $48",
-                  "description": "Includes cut, wash and styling.",
-                  "priceCurrency": "SGD"
-                },
-                {
-                  "@type": "Offer",
-                  "name": "Wash & Blow & Style",
-                  "price": "$28 - $48",
-                  "priceCurrency": "SGD"
-                }
+              "itemListElement": [
+                {"@type":"Offer","itemOffered":{"@type":"Service","name":"Haircut (Men)","description":"Kids and adults"},"priceSpecification":{"@type":"PriceSpecification","minPrice":20,"maxPrice":25,"priceCurrency":"SGD"}},
+                {"@type":"Offer","itemOffered":{"@type":"Service","name":"Haircut (Women)"},"priceSpecification":{"@type":"PriceSpecification","minPrice":20,"maxPrice":30,"priceCurrency":"SGD"}},
+                {"@type":"Offer","itemOffered":{"@type":"Service","name":"Wash & Cut (Men)","description":"Includes cut, wash and styling."},"priceSpecification":{"@type":"PriceSpecification","price":35,"priceCurrency":"SGD"}},
+                {"@type":"Offer","itemOffered":{"@type":"Service","name":"Wash & Cut (Women)","description":"Includes cut, wash and styling."},"priceSpecification":{"@type":"PriceSpecification","minPrice":40,"maxPrice":48,"priceCurrency":"SGD"}},
+                {"@type":"Offer","itemOffered":{"@type":"Service","name":"Wash & Blow & Style"},"priceSpecification":{"@type":"PriceSpecification","minPrice":28,"maxPrice":48,"priceCurrency":"SGD"}}
               ]
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
+            },
+            {
+              "@type": "OfferCatalog",
               "name": "Hair Coloring",
-              "offers": [
-                {
-                  "@type": "Offer",
-                  "name": "Hair Colour",
-                  "price": "$68 - 198",
-                  "priceCurrency": "SGD"
-                },
-                {
-                  "@type": "Offer",
-                  "name": "Non-ammonia Coloring",
-                  "price": "108.00 - 198.00",
-                  "priceCurrency": "SGD"
-                },
-                {
-                  "@type": "Offer",
-                  "name": "Hair Highlight",
-                  "price": "$68 - 168",
-                  "priceCurrency": "SGD"
-                }
+              "itemListElement": [
+                {"@type":"Offer","itemOffered":{"@type":"Service","name":"Hair Colour"},"priceSpecification":{"@type":"PriceSpecification","minPrice":68,"maxPrice":198,"priceCurrency":"SGD"}},
+                {"@type":"Offer","itemOffered":{"@type":"Service","name":"Non-ammonia Coloring"},"priceSpecification":{"@type":"PriceSpecification","minPrice":108,"maxPrice":198,"priceCurrency":"SGD"}},
+                {"@type":"Offer","itemOffered":{"@type":"Service","name":"Hair Highlight"},"priceSpecification":{"@type":"PriceSpecification","minPrice":68,"maxPrice":168,"priceCurrency":"SGD"}}
               ]
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
+            },
+            {
+              "@type": "OfferCatalog",
               "name": "Perming",
-              "offers": [
-                {
-                  "@type": "Offer",
-                  "name": "Soft Rebonding",
-                  "price": "152.00 - 248.00",
-                  "priceCurrency": "SGD"
-                },
-                {
-                  "@type": "Offer",
-                  "name": "Steambond",
-                  "price": "228.00 - 328.00",
-                  "priceCurrency": "SGD"
-                },
-                {
-                  "@type": "Offer",
-                  "name": "Cool Perm",
-                  "price": "118.00 - 158.00",
-                  "priceCurrency": "SGD"
-                },
-                {
-                  "@type": "Offer",
-                  "name": "Digital Perm",
-                  "price": "228.00 - 288.00",
-                  "priceCurrency": "SGD"
-                },
-                {
-                  "@type": "Offer",
-                  "name": "Korean Namo Perm",
-                  "price": "248.00 - 328.00",
-                  "priceCurrency": "SGD"
-                }
+              "itemListElement": [
+                {"@type":"Offer","itemOffered":{"@type":"Service","name":"Soft Rebonding"},"priceSpecification":{"@type":"PriceSpecification","minPrice":152,"maxPrice":248,"priceCurrency":"SGD"}},
+                {"@type":"Offer","itemOffered":{"@type":"Service","name":"Steambond"},"priceSpecification":{"@type":"PriceSpecification","minPrice":228,"maxPrice":328,"priceCurrency":"SGD"}},
+                {"@type":"Offer","itemOffered":{"@type":"Service","name":"Cool Perm"},"priceSpecification":{"@type":"PriceSpecification","minPrice":118,"maxPrice":158,"priceCurrency":"SGD"}},
+                {"@type":"Offer","itemOffered":{"@type":"Service","name":"Digital Perm"},"priceSpecification":{"@type":"PriceSpecification","minPrice":228,"maxPrice":288,"priceCurrency":"SGD"}},
+                {"@type":"Offer","itemOffered":{"@type":"Service","name":"Korean Namo Perm"},"priceSpecification":{"@type":"PriceSpecification","minPrice":248,"maxPrice":328,"priceCurrency":"SGD"}}
               ]
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
+            },
+            {
+              "@type": "OfferCatalog",
               "name": "Hair Treatments",
-              "offers": [
-                {
-                  "@type": "Offer",
-                  "name": "Migration Hair Treatment",
-                  "price": "68.00 - 108.00",
-                  "priceCurrency": "SGD"
-                },
-                {
-                  "@type": "Offer",
-                  "name": "Repair Hair Treatment",
-                  "price": "128.00 - 168.00",
-                  "priceCurrency": "SGD"
-                },
-                {
-                  "@type": "Offer",
-                  "name": "Nano Hair Treatment",
-                  "price": "228.00 - 288.00",
-                  "priceCurrency": "SGD"
-                },
-                {
-                  "@type": "Offer",
-                  "name": "Keratin Hair Treatment",
-                  "price": "268.00 - 358.00",
-                  "priceCurrency": "SGD"
-                },
-                {
-                  "@type": "Offer",
-                  "name": "Scalp Treatment",
-                  "price": "$98 - 198",
-                  "priceCurrency": "SGD"
-                }
+              "itemListElement": [
+                {"@type":"Offer","itemOffered":{"@type":"Service","name":"Migration Hair Treatment"},"priceSpecification":{"@type":"PriceSpecification","minPrice":68,"maxPrice":108,"priceCurrency":"SGD"}},
+                {"@type":"Offer","itemOffered":{"@type":"Service","name":"Repair Hair Treatment"},"priceSpecification":{"@type":"PriceSpecification","minPrice":128,"maxPrice":168,"priceCurrency":"SGD"}},
+                {"@type":"Offer","itemOffered":{"@type":"Service","name":"Nano Hair Treatment"},"priceSpecification":{"@type":"PriceSpecification","minPrice":228,"maxPrice":288,"priceCurrency":"SGD"}},
+                {"@type":"Offer","itemOffered":{"@type":"Service","name":"Keratin Hair Treatment"},"priceSpecification":{"@type":"PriceSpecification","minPrice":268,"maxPrice":358,"priceCurrency":"SGD"}},
+                {"@type":"Offer","itemOffered":{"@type":"Service","name":"Scalp Treatment"},"priceSpecification":{"@type":"PriceSpecification","minPrice":98,"maxPrice":198,"priceCurrency":"SGD"}}
               ]
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
+            },
+            {
+              "@type": "OfferCatalog",
               "name": "Eyelash & Eyebrow Services",
-              "offers": [
-                {
-                  "@type": "Offer",
-                  "name": "Eyelash Extension",
-                  "price": "$98 - $128",
-                  "priceCurrency": "SGD"
-                },
-                {
-                  "@type": "Offer",
-                  "name": "Eyebrow Tattoo",
-                  "price": "$228 - 488",
-                  "priceCurrency": "SGD"
-                },
-                {
-                  "@type": "Offer",
-                  "name": "Lips Nano Tattoo",
-                  "price": "$388 - 588",
-                  "priceCurrency": "SGD"
-                },
-                {
-                  "@type": "Offer",
-                  "name": "Korean Eyebrow Nano",
-                  "price": "$288 - 488",
-                  "priceCurrency": "SGD"
-                }
+              "itemListElement": [
+                {"@type":"Offer","itemOffered":{"@type":"Service","name":"Eyelash Extension"},"priceSpecification":{"@type":"PriceSpecification","minPrice":98,"maxPrice":128,"priceCurrency":"SGD"}},
+                {"@type":"Offer","itemOffered":{"@type":"Service","name":"Eyebrow Tattoo"},"priceSpecification":{"@type":"PriceSpecification","minPrice":228,"maxPrice":488,"priceCurrency":"SGD"}},
+                {"@type":"Offer","itemOffered":{"@type":"Service","name":"Lips Nano Tattoo"},"priceSpecification":{"@type":"PriceSpecification","minPrice":388,"maxPrice":588,"priceCurrency":"SGD"}},
+                {"@type":"Offer","itemOffered":{"@type":"Service","name":"Korean Eyebrow Nano"},"priceSpecification":{"@type":"PriceSpecification","minPrice":288,"maxPrice":488,"priceCurrency":"SGD"}}
               ]
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
+            },
+            {
+              "@type": "OfferCatalog",
               "name": "IPL Services",
-              "offers": [
-                {
-                  "@type": "Offer",
-                  "name": "IPL Bikini Hair Remover",
-                  "price": "$48 - 78",
-                  "priceCurrency": "SGD"
-                },
-                {
-                  "@type": "Offer",
-                  "name": "IPL Armpit Hair Remover",
-                  "price": "$38 - 58",
-                  "priceCurrency": "SGD"
-                }
+              "itemListElement": [
+                {"@type":"Offer","itemOffered":{"@type":"Service","name":"IPL Bikini Hair Removal"},"priceSpecification":{"@type":"PriceSpecification","minPrice":48,"maxPrice":78,"priceCurrency":"SGD"}},
+                {"@type":"Offer","itemOffered":{"@type":"Service","name":"IPL Armpit Hair Removal"},"priceSpecification":{"@type":"PriceSpecification","minPrice":38,"maxPrice":58,"priceCurrency":"SGD"}}
               ]
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
+            },
+            {
+              "@type": "OfferCatalog",
               "name": "Paraffin Treatments",
-              "offers": [
-                {
-                  "@type": "Offer",
-                  "name": "Parrafin Hand",
-                  "price": "$48 - $68",
-                  "priceCurrency": "SGD"
-                },
-                {
-                  "@type": "Offer",
-                  "name": "Parrafin Leg",
-                  "price": "$48 - $68",
-                  "priceCurrency": "SGD"
-                }
+              "itemListElement": [
+                {"@type":"Offer","itemOffered":{"@type":"Service","name":"Paraffin Hand"},"priceSpecification":{"@type":"PriceSpecification","minPrice":48,"maxPrice":68,"priceCurrency":"SGD"}},
+                {"@type":"Offer","itemOffered":{"@type":"Service","name":"Paraffin Leg"},"priceSpecification":{"@type":"PriceSpecification","minPrice":48,"maxPrice":68,"priceCurrency":"SGD"}}
               ]
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
+            },
+            {
+              "@type": "OfferCatalog",
               "name": "Waxing Services",
-              "offers": [
-                {
-                  "@type": "Offer",
-                  "name": "Waxing Half Hand",
-                  "price": "$38",
-                  "priceCurrency": "SGD"
-                },
-                {
-                  "@type": "Offer",
-                  "name": "Waxing Full Hand",
-                  "price": "$78",
-                  "priceCurrency": "SGD"
-                },
-                {
-                  "@type": "Offer",
-                  "name": "Waxing Half Leg",
-                  "price": "$48",
-                  "priceCurrency": "SGD"
-                },
-                {
-                  "@type": "Offer",
-                  "name": "Waxing Full Leg",
-                  "price": "$98",
-                  "priceCurrency": "SGD"
-                }
+              "itemListElement": [
+                {"@type":"Offer","itemOffered":{"@type":"Service","name":"Waxing Half Hand"},"priceSpecification":{"@type":"PriceSpecification","price":38,"priceCurrency":"SGD"}},
+                {"@type":"Offer","itemOffered":{"@type":"Service","name":"Waxing Full Hand"},"priceSpecification":{"@type":"PriceSpecification","price":78,"priceCurrency":"SGD"}},
+                {"@type":"Offer","itemOffered":{"@type":"Service","name":"Waxing Half Leg"},"priceSpecification":{"@type":"PriceSpecification","price":48,"priceCurrency":"SGD"}},
+                {"@type":"Offer","itemOffered":{"@type":"Service","name":"Waxing Full Leg"},"priceSpecification":{"@type":"PriceSpecification","price":98,"priceCurrency":"SGD"}}
               ]
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
+            },
+            {
+              "@type": "OfferCatalog",
               "name": "Manicure Services",
-              "offers": [
-                {
-                  "@type": "Offer",
-                  "name": "Classic Manicure",
-                  "price": "$25",
-                  "priceCurrency": "SGD"
-                },
-                {
-                  "@type": "Offer",
-                  "name": "Express Manicure",
-                  "price": "$20",
-                  "priceCurrency": "SGD"
-                },
-                {
-                  "@type": "Offer",
-                  "name": "Full Classic Manicure Gel Polish",
-                  "price": "$45",
-                  "priceCurrency": "SGD"
-                },
-                {
-                  "@type": "Offer",
-                  "name": "Express Gel Polish Mani",
-                  "price": "$35",
-                  "priceCurrency": "SGD"
-                },
-                {
-                  "@type": "Offer",
-                  "name": "Nail Mask Mani",
-                  "price": "$20 - $28",
-                  "priceCurrency": "SGD"
-                },
-                {
-                  "@type": "Offer",
-                  "name": "Spa Mani",
-                  "price": "$48 - $68",
-                  "priceCurrency": "SGD"
-                }
+              "itemListElement": [
+                {"@type":"Offer","itemOffered":{"@type":"Service","name":"Classic Manicure"},"priceSpecification":{"@type":"PriceSpecification","price":25,"priceCurrency":"SGD"}},
+                {"@type":"Offer","itemOffered":{"@type":"Service","name":"Express Manicure"},"priceSpecification":{"@type":"PriceSpecification","price":20,"priceCurrency":"SGD"}},
+                {"@type":"Offer","itemOffered":{"@type":"Service","name":"Full Classic Manicure Gel Polish"},"priceSpecification":{"@type":"PriceSpecification","price":45,"priceCurrency":"SGD"}},
+                {"@type":"Offer","itemOffered":{"@type":"Service","name":"Express Gel Polish Manicure"},"priceSpecification":{"@type":"PriceSpecification","price":35,"priceCurrency":"SGD"}},
+                {"@type":"Offer","itemOffered":{"@type":"Service","name":"Nail Mask Manicure"},"priceSpecification":{"@type":"PriceSpecification","minPrice":20,"maxPrice":28,"priceCurrency":"SGD"}},
+                {"@type":"Offer","itemOffered":{"@type":"Service","name":"Spa Manicure"},"priceSpecification":{"@type":"PriceSpecification","minPrice":48,"maxPrice":68,"priceCurrency":"SGD"}}
               ]
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
+            },
+            {
+              "@type": "OfferCatalog",
               "name": "Pedicure Services",
-              "offers": [
-                {
-                  "@type": "Offer",
-                  "name": "Classic Pedicure",
-                  "price": "$35",
-                  "priceCurrency": "SGD"
-                },
-                {
-                  "@type": "Offer",
-                  "name": "Express Pedicure",
-                  "price": "$20",
-                  "priceCurrency": "SGD"
-                },
-                {
-                  "@type": "Offer",
-                  "name": "Full Classic Pedicure Gel Polish",
-                  "price": "$55",
-                  "priceCurrency": "SGD"
-                },
-                {
-                  "@type": "Offer",
-                  "name": "Express Gel Polish Pedi",
-                  "price": "$38",
-                  "priceCurrency": "SGD"
-                },
-                {
-                  "@type": "Offer",
-                  "name": "Nail Mask Pedi",
-                  "price": "$20 - $28",
-                  "priceCurrency": "SGD"
-                },
-                {
-                  "@type": "Offer",
-                  "name": "Spa Pedi",
-                  "price": "$48 / $68",
-                  "priceCurrency": "SGD"
-                }
+              "itemListElement": [
+                {"@type":"Offer","itemOffered":{"@type":"Service","name":"Classic Pedicure"},"priceSpecification":{"@type":"PriceSpecification","price":35,"priceCurrency":"SGD"}},
+                {"@type":"Offer","itemOffered":{"@type":"Service","name":"Express Pedicure"},"priceSpecification":{"@type":"PriceSpecification","price":20,"priceCurrency":"SGD"}},
+                {"@type":"Offer","itemOffered":{"@type":"Service","name":"Full Classic Pedicure Gel Polish"},"priceSpecification":{"@type":"PriceSpecification","price":55,"priceCurrency":"SGD"}},
+                {"@type":"Offer","itemOffered":{"@type":"Service","name":"Express Gel Polish Pedicure"},"priceSpecification":{"@type":"PriceSpecification","price":38,"priceCurrency":"SGD"}},
+                {"@type":"Offer","itemOffered":{"@type":"Service","name":"Nail Mask Pedicure"},"priceSpecification":{"@type":"PriceSpecification","minPrice":20,"maxPrice":28,"priceCurrency":"SGD"}},
+                {"@type":"Offer","itemOffered":{"@type":"Service","name":"Spa Pedicure"},"priceSpecification":{"@type":"PriceSpecification","minPrice":48,"maxPrice":68,"priceCurrency":"SGD"}}
               ]
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
+            },
+            {
+              "@type": "OfferCatalog",
               "name": "Combo Services",
-              "offers": [
-                {
-                  "@type": "Offer",
-                  "name": "Classic Pedi/Mani",
-                  "price": "$60",
-                  "priceCurrency": "SGD"
-                },
-                {
-                  "@type": "Offer",
-                  "name": "Express Gel Polish Mani & Pedi",
-                  "price": "$73",
-                  "priceCurrency": "SGD"
-                }
+              "itemListElement": [
+                {"@type":"Offer","itemOffered":{"@type":"Service","name":"Classic Pedicure & Manicure"},"priceSpecification":{"@type":"PriceSpecification","price":60,"priceCurrency":"SGD"}},
+                {"@type":"Offer","itemOffered":{"@type":"Service","name":"Express Gel Polish Manicure & Pedicure"},"priceSpecification":{"@type":"PriceSpecification","price":73,"priceCurrency":"SGD"}}
               ]
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
+            },
+            {
+              "@type": "OfferCatalog",
               "name": "Soak Off Services",
-              "offers": [
-                {
-                  "@type": "Offer",
-                  "name": "Soak Off Acrylic",
-                  "price": "$48",
-                  "priceCurrency": "SGD"
-                },
-                {
-                  "@type": "Offer",
-                  "name": "Soak Off Hard Gel",
-                  "price": "$48",
-                  "priceCurrency": "SGD"
-                },
-                {
-                  "@type": "Offer",
-                  "name": "Soak Off Gel Polish",
-                  "price": "$15",
-                  "priceCurrency": "SGD"
-                }
+              "itemListElement": [
+                {"@type":"Offer","itemOffered":{"@type":"Service","name":"Soak Off Acrylic"},"priceSpecification":{"@type":"PriceSpecification","price":48,"priceCurrency":"SGD"}},
+                {"@type":"Offer","itemOffered":{"@type":"Service","name":"Soak Off Hard Gel"},"priceSpecification":{"@type":"PriceSpecification","price":48,"priceCurrency":"SGD"}},
+                {"@type":"Offer","itemOffered":{"@type":"Service","name":"Soak Off Gel Polish"},"priceSpecification":{"@type":"PriceSpecification","price":15,"priceCurrency":"SGD"}}
+              ]
+            },
+            {
+              "@type": "OfferCatalog",
+              "name": "Other Nail Services",
+              "itemListElement": [
+                {"@type":"Offer","itemOffered":{"@type":"Service","name":"French"},"priceSpecification":{"@type":"PriceSpecification","minPrice":20,"maxPrice":28,"priceCurrency":"SGD"}},
+                {"@type":"Offer","itemOffered":{"@type":"Service","name":"Gel Change Colour"},"priceSpecification":{"@type":"PriceSpecification","price":25,"priceCurrency":"SGD"}},
+                {"@type":"Offer","itemOffered":{"@type":"Service","name":"Gel Extension"},"priceSpecification":{"@type":"PriceSpecification","minPrice":80,"maxPrice":100,"priceCurrency":"SGD"}},
+                {"@type":"Offer","itemOffered":{"@type":"Service","name":"Acrylic Infill"},"priceSpecification":{"@type":"PriceSpecification","price":50,"priceCurrency":"SGD"}},
+                {"@type":"Offer","itemOffered":{"@type":"Service","name":"Callus Treatment"},"priceSpecification":{"@type":"PriceSpecification","minPrice":38,"maxPrice":68,"priceCurrency":"SGD"}},
+                {"@type":"Offer","itemOffered":{"@type":"Service","name":"French Gel Polish"},"priceSpecification":{"@type":"PriceSpecification","minPrice":20,"maxPrice":28,"priceCurrency":"SGD"}},
+                {"@type":"Offer","itemOffered":{"@type":"Service","name":"Nail Art"},"priceSpecification":{"@type":"PriceSpecification","minPrice":3,"priceCurrency":"SGD"}}
               ]
             }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Other Services",
-              "offers": [
-                {
-                  "@type": "Offer",
-                  "name": "French",
-                  "price": "$20 - $28",
-                  "priceCurrency": "SGD"
-                },
-                {
-                  "@type": "Offer",
-                  "name": "Gel Change Colour",
-                  "price": "$25",
-                  "priceCurrency": "SGD"
-                },
-                {
-                  "@type": "Offer",
-                  "name": "Gel Extension",
-                  "price": "$80 - $100",
-                  "priceCurrency": "SGD"
-                },
-                {
-                  "@type": "Offer",
-                  "name": "Acrylic Fin-fill",
-                  "price": "$50",
-                  "priceCurrency": "SGD"
-                },
-                {
-                  "@type": "Offer",
-                  "name": "Callus Treatment",
-                  "price": "$38 - $68",
-                  "priceCurrency": "SGD"
-                },
-                {
-                  "@type": "Offer",
-                  "name": "French Gel Polish",
-                  "price": "$20 - $28",
-                  "priceCurrency": "SGD"
-                },
-                {
-                  "@type": "Offer",
-                  "name": "Nail Art",
-                  "price": "$3+",
-                  "priceCurrency": "SGD"
-                }
-              ]
-            }
-          }
-        ]
+          ]
+        }
       }
     </script>
   </head>
