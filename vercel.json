@@ -5,6 +5,7 @@
     { "src": "about.html", "use": "@vercel/static" },
     { "src": "faq.html", "use": "@vercel/static" },
     { "src": "services.html", "use": "@vercel/static" },
+    { "src": "service-categories.html", "use": "@vercel/static" },
     { "src": "sitemap.xml", "use": "@vercel/static" },
     { "src": "public/**", "use": "@vercel/static" },
     { "src": "assets/**", "use": "@vercel/static" },
@@ -14,6 +15,7 @@
     { "source": "/about", "destination": "/about.html" },
     { "source": "/faq", "destination": "/faq.html" },
     { "source": "/services", "destination": "/services.html" },
+    { "source": "/service-categories", "destination": "/service-categories.html" },
     { "source": "/(index)?", "destination": "/index.html" }
   ],
   "headers": [
