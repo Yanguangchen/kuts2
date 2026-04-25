@@ -47,6 +47,11 @@
       .trust-section {
         scroll-margin-top: 100px;
         margin-bottom: 56px;
+        transition: transform 0.25s ease, filter 0.25s ease;
+      }
+      .trust-section:hover {
+        transform: translateY(-2px);
+        filter: saturate(1.03);
       }
       .trust-section h2 {
         color: var(--brand);
@@ -64,6 +69,11 @@
       }
       .trust-list li {
         margin-bottom: 10px;
+        transition: transform 0.2s ease, color 0.2s ease;
+      }
+      .trust-list li:hover {
+        transform: translateX(4px);
+        color: var(--brand);
       }
       .trust-jump {
         display: flex;
@@ -96,6 +106,33 @@
       .trust-back a {
         color: var(--brand);
         font-weight: 600;
+      }
+      .compare-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 14px;
+        margin-top: 14px;
+      }
+      .compare-card {
+        border: 1px solid rgba(139, 117, 70, 0.26);
+        background: rgba(255, 255, 255, 0.7);
+        border-radius: 14px;
+        padding: 14px 14px 12px;
+        transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+      }
+      .compare-card:hover {
+        transform: translateY(-2px);
+        border-color: rgba(139, 117, 70, 0.5);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      }
+      .compare-card h3 {
+        margin: 0 0 8px;
+        font-size: 1rem;
+        color: var(--brand);
+      }
+      .compare-card p {
+        margin: 0;
+        font-size: 0.95rem;
       }
     </style>
     <script type="application/ld+json">
@@ -145,6 +182,8 @@
             Straightforward pricing, skilled hands, and a salon environment where you always know what to expect.
           </p>
           <nav class="trust-jump" aria-label="On this page">
+            <a href="#why-haircut" data-en="Why our haircuts" data-zh="为什么选我们的剪发">Why our haircuts</a>
+            <a href="#why-perming" data-en="Why our perms" data-zh="为什么选我们的烫发">Why our perms</a>
             <a href="#hair-nail-services" data-en="Hair & nails" data-zh="美发与美甲">Hair & nails</a>
             <a href="#beauty-addons" data-en="Beauty add-ons" data-zh="美妆加项">Beauty add-ons</a>
           </nav>
@@ -152,6 +191,54 @@
       </section>
 
       <div class="trust-content">
+        <section id="why-haircut" class="trust-section reveal">
+          <h2 data-en="Why choose us for your haircut" data-zh="为什么剪发选择我们">Why choose us for your haircut</h2>
+          <p
+            data-en="A haircut should still look good when you style it at home. We focus on face shape, growth pattern and daily routine so your cut is practical — not just salon-day nice."
+            data-zh="好的剪发应在家也容易打理。我们会结合脸型、发流和日常习惯设计发型，让效果不只停留在“当天好看”。"
+          >
+            A haircut should still look good when you style it at home. We focus on face shape, growth pattern and daily routine so your cut is practical — not just salon-day nice.
+          </p>
+          <div class="compare-grid">
+            <article class="compare-card">
+              <h3 data-en="Personal design first" data-zh="先做个性化设计">Personal design first</h3>
+              <p data-en="We discuss your preferred length, maintenance level and work/lifestyle needs before we cut." data-zh="剪发前先确认长度偏好、打理难度和工作/生活场景需求。">We discuss your preferred length, maintenance level and work/lifestyle needs before we cut.</p>
+            </article>
+            <article class="compare-card">
+              <h3 data-en="Precision that grows out well" data-zh="长长后依然好看">Precision that grows out well</h3>
+              <p data-en="Our sectioning and finishing are done to keep shape longer, so your style stays neat between visits." data-zh="通过分区与收尾细节控制，让发型在回长过程中也更有型。">Our sectioning and finishing are done to keep shape longer, so your style stays neat between visits.</p>
+            </article>
+            <article class="compare-card">
+              <h3 data-en="No hard selling" data-zh="不强推加项">No hard selling</h3>
+              <p data-en="You get clear suggestions and transparent pricing, with no pressure to add treatments you do not need." data-zh="只给清晰建议与透明价格，不会强推不必要的项目。">You get clear suggestions and transparent pricing, with no pressure to add treatments you do not need.</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="why-perming" class="trust-section reveal">
+          <h2 data-en="Why choose us for your perming service" data-zh="为什么烫发选择我们">Why choose us for your perming service</h2>
+          <p
+            data-en="Perms are about chemistry and technique. We protect hair condition first, then choose the right method (digital, cool perm, steambond, rebonding) to match your desired curl and upkeep."
+            data-zh="烫发讲究药水与技术配合。我们先评估发质健康，再选择数码烫、冷烫、蒸汽离子烫或柔顺离子烫等方案，匹配你想要的卷度与日常维护方式。"
+          >
+            Perms are about chemistry and technique. We protect hair condition first, then choose the right method (digital, cool perm, steambond, rebonding) to match your desired curl and upkeep.
+          </p>
+          <div class="compare-grid">
+            <article class="compare-card">
+              <h3 data-en="Hair health assessment" data-zh="先看发质健康">Hair health assessment</h3>
+              <p data-en="We check previous colour, damage level and scalp sensitivity so we can avoid over-processing." data-zh="先判断染烫历史、受损程度与头皮敏感度，避免过度处理。">We check previous colour, damage level and scalp sensitivity so we can avoid over-processing.</p>
+            </article>
+            <article class="compare-card">
+              <h3 data-en="Method matched to your goal" data-zh="方法匹配目标效果">Method matched to your goal</h3>
+              <p data-en="From soft volume to defined curls, we recommend the method that best fits your hair type and desired finish." data-zh="从自然蓬松到明显卷度，按发质和目标效果选择最合适的方法。">From soft volume to defined curls, we recommend the method that best fits your hair type and desired finish.</p>
+            </article>
+            <article class="compare-card">
+              <h3 data-en="Aftercare that extends results" data-zh="给到可执行护理建议">Aftercare that extends results</h3>
+              <p data-en="You leave with practical aftercare guidance on washing, drying and products so your perm lasts longer." data-zh="我们会给出洗护、吹整与产品建议，帮助卷度更持久。">You leave with practical aftercare guidance on washing, drying and products so your perm lasts longer.</p>
+            </article>
+          </div>
+        </section>
+
         <section id="hair-nail-services" class="trust-section reveal">
           <h2 data-en="Hair & nail services" data-zh="美发与美甲服务">Hair & nail services</h2>
           <p

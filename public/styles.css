@@ -868,6 +868,51 @@ h2 {
   outline: 2px solid rgba(255, 255, 255, 0.85);
   outline-offset: 2px;
 }
+.comparison-wrap {
+  overflow-x: auto;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.06);
+}
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 760px;
+}
+.comparison-table th,
+.comparison-table td {
+  padding: 14px 16px;
+  text-align: left;
+  border-bottom: 1px solid rgba(139, 117, 70, 0.2);
+  vertical-align: top;
+}
+.comparison-table thead th {
+  background: rgba(139, 117, 70, 0.12);
+  color: var(--brand);
+  font-weight: 700;
+}
+.comparison-table tbody tr {
+  transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+.comparison-table tbody tr:hover,
+.comparison-table tbody tr:focus-visible {
+  background: rgba(139, 117, 70, 0.12);
+  transform: translateY(-1px);
+  box-shadow: inset 3px 0 0 var(--brand);
+  outline: none;
+}
+.comparison-table tbody td:first-child {
+  font-weight: 600;
+  color: var(--brand);
+  width: 22%;
+}
+.comparison-table tbody td:nth-child(2) {
+  width: 39%;
+}
+.comparison-table tbody td:nth-child(3) {
+  width: 39%;
+}
 .service-groups {
   display: grid;
   grid-template-columns: 1fr;
