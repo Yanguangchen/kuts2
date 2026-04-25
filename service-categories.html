@@ -47,6 +47,11 @@
       .trust-section {
         scroll-margin-top: 100px;
         margin-bottom: 56px;
+        transition: transform 0.25s ease, filter 0.25s ease;
+      }
+      .trust-section:hover {
+        transform: translateY(-2px);
+        filter: saturate(1.03);
       }
       .trust-section h2 {
         color: var(--brand);
@@ -64,6 +69,11 @@
       }
       .trust-list li {
         margin-bottom: 10px;
+        transition: transform 0.2s ease, color 0.2s ease;
+      }
+      .trust-list li:hover {
+        transform: translateX(4px);
+        color: var(--brand);
       }
       .trust-jump {
         display: flex;
