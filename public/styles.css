@@ -313,6 +313,56 @@ img, video, iframe, svg {
   font-size: 20px;
   color: var(--brand);
 }
+.intro-head h1 {
+  margin: 0 0 14px;
+  font-size: clamp(28px, 4.6vw, 44px);
+  line-height: 1.15;
+  color: var(--brand);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+.intro-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 18px 0 14px;
+}
+.intro-cta-primary,
+.intro-cta-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+  transition: transform 0.15s ease, background 0.15s ease, border-color 0.15s ease;
+}
+.intro-cta-primary {
+  background: var(--brand);
+  color: #1a1a1a;
+  border: 1px solid var(--brand);
+}
+.intro-cta-primary:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.05);
+}
+.intro-cta-secondary {
+  background: transparent;
+  color: var(--brand);
+  border: 1px solid rgba(139, 117, 70, 0.45);
+}
+.intro-cta-secondary:hover {
+  background: rgba(139, 117, 70, 0.12);
+  transform: translateY(-1px);
+}
+.intro-trust {
+  margin: 6px 0 0;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.5;
+}
 .intro-points {
   list-style: none;
   padding: 0;
@@ -841,6 +891,14 @@ h2 {
   margin: 0;
   color: rgba(255, 255, 255, 0.92);
 }
+.card-price {
+  margin: 10px 0 0;
+  font-weight: 700;
+  font-size: 14px;
+  color: #ffffff;
+  letter-spacing: 0.02em;
+  opacity: 0.95;
+}
 .card-trust-wrap {
   margin-top: 14px;
 }
@@ -1068,6 +1126,12 @@ h2 {
 }
 .contact-hours {
   color: var(--muted);
+}
+.contact-note {
+  color: var(--muted);
+  font-size: 14px;
+  max-width: 520px;
+  line-height: 1.5;
 }
 
 /* Floating WhatsApp button */
