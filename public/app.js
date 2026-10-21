@@ -191,7 +191,7 @@ function initHeroProgress() {
     progressBar.style.width = Math.min(100, Math.max(0, progress)) + '%';
   }
   
-  window.addEventListener('scroll', updateProgress);
+  window.addEventListener("scroll", updateProgress, { passive: true });
   updateProgress();
 }
 
@@ -234,8 +234,115 @@ function init() {
   if (enBtn) enBtn.addEventListener("click", () => setLang("en"));
   if (zhBtn) zhBtn.addEventListener("click", () => setLang("zh"));
   
-  // Update viewport height on resize
-  window.addEventListener('resize', setViewportHeightVar);
+  window.addEventListener("resize", setViewportHeightVar, { passive: true });
+  initHeroMedia();
+  initDeferredThirdParties();
+}
+
+function loadScript(src, attrs) {
+  return new Promise((resolve) => {
+    const existing = document.querySelector(`script[src="${src}"]`);
+    if (existing) {
+      resolve();
+      return;
+    }
+    const script = document.createElement("script");
+    script.src = src;
+    script.async = true;
+    if (attrs) {
+      Object.entries(attrs).forEach(([key, value]) => script.setAttribute(key, value));
+    }
+    script.onload = () => resolve();
+    script.onerror = () => resolve();
+    document.body.appendChild(script);
+  });
+}
+
+function onIdle(fn, timeout) {
+  const start = () => {
+    const ric = window.requestIdleCallback || ((cb) => setTimeout(cb, timeout || 1200));
+    ric(() => fn(), { timeout: timeout || 2000 });
+  };
+  if (document.readyState === "complete") start();
+  else window.addEventListener("load", start, { once: true });
+}
+
+function prefersLightExperience() {
+  const reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const saveData = navigator.connection && navigator.connection.saveData;
+  return reduce || saveData;
+}
+
+function initHeroMedia() {
+  const container = document.getElementById("container");
+  if (!container || prefersLightExperience()) return;
+  const wide = window.matchMedia && window.matchMedia("(min-width: 900px)").matches;
+  if (!wide) return;
+
+  onIdle(() => {
+    const video = container.querySelector(".spline-bg-video");
+    if (video && !video.querySelector("source")) {
+      const source = document.createElement("source");
+      source.src = "/public/background.mp4";
+      source.type = "video/mp4";
+      video.muted = true;
+      video.appendChild(source);
+      video.load();
+      const play = video.play();
+      if (play && typeof play.catch === "function") play.catch(() => {});
+    }
+  }, 1800);
+
+  onIdle(() => {
+    if (container.querySelector("spline-viewer")) return;
+    loadScript("https://unpkg.com/@splinetool/viewer@1.10.82/build/spline-viewer.js", {
+      type: "module",
+    }).then(() => {
+      const mount = () => {
+        if (container.querySelector("spline-viewer")) return;
+        const viewer = document.createElement("spline-viewer");
+        viewer.setAttribute("loading-anim-type", "none");
+        viewer.setAttribute("url", "https://prod.spline.design/4UOHnuBXVUXfbAdP/scene.splinecode");
+        container.appendChild(viewer);
+      };
+      if (window.customElements && customElements.whenDefined) {
+        customElements.whenDefined("spline-viewer").then(mount);
+      } else {
+        mount();
+      }
+    });
+  }, 2500);
+}
+
+function initDeferredThirdParties() {
+  onIdle(() => {
+    if (document.body && document.body.dataset.analytics === "1" && !window.__kkAnalytics) {
+      window.__kkAnalytics = true;
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({ "gtm.start": Date.now(), event: "gtm.js" });
+      loadScript("https://www.googletagmanager.com/gtm.js?id=GTM-5L93NMFZ");
+      loadScript("https://www.googletagmanager.com/gtag/js?id=G-LH81QNLPL7").then(() => {
+        window.dataLayer = window.dataLayer || [];
+        window.gtag = function gtag() {
+          window.dataLayer.push(arguments);
+        };
+        window.gtag("js", new Date());
+        window.gtag("config", "G-LH81QNLPL7");
+      });
+    }
+
+    if (document.querySelector("[data-elfsight-app-lazy]")) {
+      loadScript("https://elfsightcdn.com/platform.js");
+    }
+
+    if (document.getElementById("Setmore_button_iframe") && !document.getElementById("setmore_script")) {
+      const script = document.createElement("script");
+      script.id = "setmore_script";
+      script.async = true;
+      script.src = "https://assets.setmore.com/integration/static/setmoreIframeLive.js";
+      document.body.appendChild(script);
+    }
+  }, 2200);
 }
 
 // Run when DOM is ready

@@ -10,19 +10,20 @@
       name="description"
       content="A hair and beauty salon at Roxy Square II focused on clear pricing, careful consultations and practical results — not salon pressure. Haircuts, colour, perms, treatments, manicures, pedicures, lashes, brows, waxing and IPL."
     />
-    <meta name="robots" content="index,follow" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <meta name="author" content="Web Wizards" />
     <link rel="manifest" href="/manifest.json" />
-    <link rel="icon" href="/public/favicon.png" type="image/png" sizes="any" />
-    <link rel="apple-touch-icon" href="/public/favicon.png" sizes="180x180" />
+    <link rel="icon" href="/public/favicon-32.png" type="image/png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="/public/apple-touch-icon.png" sizes="180x180" />
     <link rel="canonical" href="https://kutskurls.com/about" />
+    <link rel="alternate" type="text/plain" href="https://kutskurls.com/llms.txt" title="llms.txt" />
+    <link rel="alternate" type="text/plain" href="https://kutskurls.com/llms-full.txt" title="llms-full.txt" />
+    
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+SC:wght@400;600;700&family=Inter:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="public/styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Noto+Sans+SC:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="preload" href="/public/styles.css" as="style" />
+    <link rel="stylesheet" href="/public/styles.css" />
     <style>
       .about-hero {
         padding: 120px 0 60px;
@@ -60,16 +61,34 @@
         }
       }
     </style>
+      <meta property="og:type" content="website" />
+      <meta property="og:title" content="About Kuts & Kurls — Clear pricing, careful consultations | Roxy Square II" />
+      <meta property="og:description" content="A hair and beauty salon at Roxy Square II focused on clear pricing, careful consultations and practical results — not salon pressure. Haircuts, colour, perms, treatments, manicures, pedicures, lashes, brows, waxing and IPL." />
+      <meta property="og:url" content="https://kutskurls.com/about" />
+      <meta property="og:image" content="https://kutskurls.com/public/storepictures/2.webp" />
+      <meta property="og:image:secure_url" content="https://kutskurls.com/public/storepictures/2.webp" />
+      <meta property="og:image:type" content="image/webp" />
+      <meta property="og:image:width" content="1360" />
+      <meta property="og:image:height" content="1020" />
+      <meta property="og:image:alt" content="Interior of Kuts & Kurls at Roxy Square II" />
+      <meta property="og:site_name" content="Kuts & Kurls" />
+      <meta property="og:locale" content="en_SG" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="About Kuts & Kurls — Clear pricing, careful consultations | Roxy Square II" />
+      <meta name="twitter:description" content="A hair and beauty salon at Roxy Square II focused on clear pricing, careful consultations and practical results — not salon pressure. Haircuts, colour, perms, treatments, manicures, pedicures, lashes, brows, waxing and IPL." />
+      <meta name="twitter:image" content="https://kutskurls.com/public/storepictures/2.webp" />
+      <meta name="twitter:image:alt" content="Interior of Kuts & Kurls at Roxy Square II" />
+      <meta name="twitter:url" content="https://kutskurls.com/about" />
   </head>
   <body>
     <header class="site-header">
       <div class="container header-inner">
         <a class="branding" href="/" aria-label="Kuts & Kurls home">
-          <img src="/public/storepictures/banner.png" alt="Kuts & Kurls logo" />
+          <img decoding="async" width="640" height="116" src="/public/storepictures/banner-nav.webp" alt="Kuts & Kurls logo" />
         </a>
         <nav class="nav" aria-label="Primary">
           <a href="/#specializations" data-en="Specializations" data-zh="特色">Specializations</a>
-          <a href="/#services" data-en="Services" data-zh="服务项目">Services</a>
+          <a href="/services" data-en="Services" data-zh="服务项目">Services</a>
           <a href="/about" data-en="About Us" data-zh="关于我们">About Us</a>
           <a href="/faq" data-en="FAQ" data-zh="常见问题">FAQ</a>
           <a href="/#contact" data-en="Contact" data-zh="联系">Contact</a>
@@ -88,6 +107,7 @@
     <main>
       <section class="about-hero reveal">
         <div class="container">
+          <nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="/" data-en="Home" data-zh="首页">Home</a></li><li aria-current="page" data-en="About" data-zh="关于我们">About</li></ol></nav>
           <h1 data-en="About Kuts & Kurls" data-zh="关于 Kuts & Kurls">About Kuts & Kurls</h1>
           <p class="intro-text" data-en="Clear pricing, careful consultations, and practical beauty services for East Coast customers who want good results without salon pressure." data-zh="价格清楚、用心沟通，为东海岸顾客提供务实的美容服务 — 不强推、不催促。">Clear pricing, careful consultations, and practical beauty services for East Coast customers who want good results without salon pressure.</p>
         </div>
@@ -124,7 +144,7 @@
               </p>
             </div>
             <div>
-              <img src="/public/storepictures/2.webp" alt="Kuts & Kurls salon interior at Roxy Square II" style="border-radius: 12px; box-shadow: var(--shadow);">
+              <img loading="lazy" decoding="async" width="1360" height="1020" src="/public/storepictures/2.webp" alt="Kuts & Kurls salon interior at Roxy Square II" style="border-radius: 12px; box-shadow: var(--shadow);">
             </div>
           </div>
         </div>
@@ -146,6 +166,12 @@
         </div>
 
         <div class="about-section reveal" style="text-align:center;">
+          <p class="section-links">
+            <a href="/services" data-en="Services and prices" data-zh="服务与价格">Services and prices</a>
+            <a href="/service-categories" data-en="Service standards" data-zh="服务标准">Service standards</a>
+            <a href="/faq" data-en="FAQ" data-zh="常见问题">FAQ</a>
+            <a href="/#contact" data-en="Map and contact" data-zh="地图与联系">Map and contact</a>
+          </p>
           <h2 data-en="Visit us" data-zh="到店">Visit us</h2>
           <p data-en="50 East Coast Rd, #01-135, Roxy Square II, Singapore 428769. Open daily 9:30am – 8:30pm."
              data-zh="50 East Coast Rd, #01-135, Roxy Square II, Singapore 428769。每天 9:30 – 20:30 营业。">50 East Coast Rd, #01-135, Roxy Square II, Singapore 428769. Open daily 9:30am – 8:30pm.</p>
@@ -160,11 +186,15 @@
 
     <footer class="site-footer">
       <div class="container">
-        <nav class="footer-nav">
+        <nav class="footer-nav" aria-label="Footer">
+          <a href="/" data-en="Home" data-zh="首页">Home</a>
           <a href="/#specializations" data-en="Specializations" data-zh="特色">Specializations</a>
-          <a href="/#services" data-en="Services" data-zh="服务项目">Services</a>
+          <a href="/services" data-en="Services" data-zh="服务项目">Services</a>
+          <a href="/service-categories" data-en="Our standards" data-zh="服务标准">Our standards</a>
           <a href="/about" data-en="About Us" data-zh="关于我们">About Us</a>
           <a href="/faq" data-en="FAQ" data-zh="常见问题">FAQ</a>
+          <a href="/#contact" data-en="Contact" data-zh="联系">Contact</a>
+          <a href="/#media" data-en="Media" data-zh="媒体">Media</a>
         </nav>
         <small>
           <span>Kuts & Kurls</span> ｜ <span>#01-135</span> ｜ 
@@ -176,15 +206,213 @@
     <div id="mobile-menu" class="mobile-menu" hidden>
       <div class="mobile-menu-inner">
         <button id="mobile-close" class="mobile-close">×</button>
-        <nav class="mobile-nav">
+        <nav class="mobile-nav" aria-label="Mobile">
           <a href="/" data-en="Home" data-zh="首页">Home</a>
+          <a href="/#specializations" data-en="Specializations" data-zh="特色">Specializations</a>
+          <a href="/services" data-en="Services" data-zh="服务项目">Services</a>
+          <a href="/service-categories" data-en="Our standards" data-zh="服务标准">Our standards</a>
           <a href="/about" data-en="About Us" data-zh="关于我们">About Us</a>
           <a href="/faq" data-en="FAQ" data-zh="常见问题">FAQ</a>
           <a href="/#contact" data-en="Contact" data-zh="联系">Contact</a>
+          <a href="/#media" data-en="Media" data-zh="媒体">Media</a>
         </nav>
       </div>
     </div>
 
-    <script type="module" src="public/app.js"></script>
-  </body>
+    <script type="module" src="/public/app.js"></script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://kutskurls.com/#website",
+      "url": "https://kutskurls.com/",
+      "name": "Kuts & Kurls",
+      "description": "Hair and beauty salon at Roxy Square II, Singapore, with clear SGD menu prices.",
+      "inLanguage": [
+        "en",
+        "zh-Hans"
+      ],
+      "publisher": {
+        "@id": "https://kutskurls.com/#salon"
+      },
+      "significantLink": [
+        "https://kutskurls.com/services",
+        "https://kutskurls.com/service-categories",
+        "https://kutskurls.com/about",
+        "https://kutskurls.com/faq"
+      ]
+    },
+    {
+      "@type": [
+        "HairSalon",
+        "NailSalon"
+      ],
+      "@id": "https://kutskurls.com/#salon",
+      "name": "Kuts & Kurls",
+      "url": "https://kutskurls.com/",
+      "description": "Hair, nails, lashes, brows, waxing and IPL at Roxy Square II, Singapore. Menu prices are in SGD and confirmed again before every service.",
+      "telephone": "+6569097503",
+      "image": [
+        "https://kutskurls.com/public/storepictures/1.jpeg",
+        "https://kutskurls.com/public/storepictures/2.webp",
+        "https://kutskurls.com/public/storepictures/3.webp"
+      ],
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://kutskurls.com/#logo",
+        "url": "https://kutskurls.com/public/storepictures/banner-nav.webp",
+        "width": 640,
+        "height": 116,
+        "caption": "Kuts & Kurls logo"
+      },
+      "priceRange": "SGD 20–SGD 588",
+      "paymentAccepted": "Cash, PayNow, NETS, Credit Card",
+      "currenciesAccepted": "SGD",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "50 East Coast Rd, #01-135, Roxy Square II",
+        "addressLocality": "Singapore",
+        "postalCode": "428769",
+        "addressCountry": "SG"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 1.3039,
+        "longitude": 103.9045
+      },
+      "hasMap": "https://www.google.com/maps/search/?api=1&query=50+East+Coast+Road+01-135+Roxy+Square+II+Singapore+428769",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "https://schema.org/Monday",
+          "https://schema.org/Tuesday",
+          "https://schema.org/Wednesday",
+          "https://schema.org/Thursday",
+          "https://schema.org/Friday",
+          "https://schema.org/Saturday",
+          "https://schema.org/Sunday"
+        ],
+        "opens": "09:30",
+        "closes": "20:30"
+      },
+      "openingHours": "Mo-Su 09:30-20:30",
+      "areaServed": {
+        "@type": "City",
+        "name": "Singapore"
+      },
+      "knowsLanguage": [
+        "en",
+        "zh",
+        "vi"
+      ],
+      "sameAs": [
+        "https://chatgpt.com/g/g-NwIWWtD6r-kurlsbot"
+      ],
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+6569097503",
+          "contactType": "customer service",
+          "areaServed": "SG",
+          "availableLanguage": [
+            "English",
+            "Chinese",
+            "Vietnamese"
+          ]
+        },
+        {
+          "@type": "ContactPoint",
+          "telephone": "+6596363537",
+          "contactType": "reservations",
+          "url": "https://wa.me/6596363537",
+          "areaServed": "SG",
+          "availableLanguage": [
+            "English",
+            "Chinese",
+            "Vietnamese"
+          ]
+        }
+      ],
+      "potentialAction": [
+        {
+          "@type": "ReserveAction",
+          "name": "Book by WhatsApp",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://wa.me/6596363537",
+            "actionPlatform": [
+              "https://schema.org/DesktopWebPlatform",
+              "https://schema.org/MobileWebPlatform"
+            ]
+          }
+        },
+        {
+          "@type": "ReserveAction",
+          "name": "Book online",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://kutsnkurls.setmore.com",
+            "actionPlatform": [
+              "https://schema.org/DesktopWebPlatform",
+              "https://schema.org/MobileWebPlatform"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://kutskurls.com/about#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://kutskurls.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "About",
+          "item": "https://kutskurls.com/about"
+        }
+      ]
+    },
+    {
+      "@type": "AboutPage",
+      "@id": "https://kutskurls.com/about#webpage",
+      "url": "https://kutskurls.com/about",
+      "name": "About Kuts & Kurls",
+      "description": "A hair and beauty salon at Roxy Square II focused on clear pricing, careful consultations and practical results.",
+      "isPartOf": {
+        "@id": "https://kutskurls.com/#website"
+      },
+      "about": {
+        "@id": "https://kutskurls.com/#salon"
+      },
+      "inLanguage": "en",
+      "primaryImageOfPage": {
+        "@id": "https://kutskurls.com/#logo"
+      },
+      "dateModified": "2026-10-21",
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          ".about-hero h1",
+          ".about-hero .intro-text"
+        ]
+      },
+      "breadcrumb": {
+        "@id": "https://kutskurls.com/about#breadcrumb"
+      },
+      "mainEntity": {
+        "@id": "https://kutskurls.com/#salon"
+      }
+    }
+  ]
+}
+    </script>
+</body>
 </html>
