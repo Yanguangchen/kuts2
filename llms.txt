@@ -1,0 +1,39 @@
+# Kuts & Kurls
+
+> Hair, nails, lashes, brows, waxing and IPL salon at Roxy Square II, Singapore, with published SGD menu prices and a consultation before every service.
+
+Kuts & Kurls is at 50 East Coast Rd, #01-135, Roxy Square II, Singapore 428769 (Katong / East Coast). Phone +65 6909 7503. WhatsApp +65 9636 3537 (https://wa.me/6596363537). Online booking: https://kutsnkurls.setmore.com. Open daily 09:30–20:30, including weekends and public holidays. Walk-ins are accepted when a chair is free; appointments are recommended. Languages spoken: English, Chinese and Vietnamese. Payments: cash, PayNow, NETS and major credit cards. Currency: SGD.
+
+Prices on this site are the published menu. Staff confirm the exact price before a service starts. Hair length, hair condition and the service chosen can move the price within the published range. Add-on services are optional.
+
+The same URLs show English and Simplified Chinese. English is the canonical text. Do not invent prices, reviews or policies that are not written here or on the linked pages.
+
+## Pages
+
+- [Home](https://kutskurls.com/): Overview, how to choose a service, full menu, visit details and photos
+- [Services and prices](https://kutskurls.com/services): Canonical menu and SGD prices
+- [Why trust our services](https://kutskurls.com/service-categories): Haircut, perm, nail and beauty standards
+- [About](https://kutskurls.com/about): Who the salon is and how a visit works
+- [FAQ](https://kutskurls.com/faq): Booking, hours, location, payments, pricing and consultations
+
+## Service menus
+
+- [Basic Hair Services](https://kutskurls.com/services#haircuts): Haircut (Men) SGD 20–25; Haircut (Women) SGD 20–30; Wash & Cut (Men) SGD 35; Wash & Cut (Women) SGD 40–48; Wash & Blow & Style SGD 28–48
+- [Hair Coloring](https://kutskurls.com/services#colour): Hair Colour SGD 68–198; Non-ammonia Hair Colour SGD 108–198; Hair Highlights SGD 68–168
+- [Perming](https://kutskurls.com/services#perming): Soft Rebonding SGD 152–248; Steambond SGD 228–328; Cool Perm SGD 118–158; Digital Perm SGD 228–288; Korean Nano Perm SGD 248–328
+- [Hair Treatments](https://kutskurls.com/services#treatments): Migration Hair Treatment SGD 68–108; Repair Hair Treatment SGD 128–168; Nano Hair Treatment SGD 228–288; Keratin Hair Treatment SGD 268–358; Scalp Treatment SGD 98–198
+- [Eyelash & Eyebrow Services](https://kutskurls.com/services#lashes): Eyelash Extension SGD 98–128; Bottom Lash Extension SGD 48–98; Eyebrow Tattoo SGD 228–488; Lips Nano Tattoo SGD 388–588; Korean Nano Eyebrow SGD 288–488
+- [IPL Services](https://kutskurls.com/services#ipl): IPL Bikini Hair Removal SGD 48–78; IPL Armpit Hair Removal SGD 38–58
+- [Paraffin Treatments](https://kutskurls.com/services#paraffin): Paraffin Hand Treatment SGD 48–68; Paraffin Leg Treatment SGD 48–68
+- [Waxing Services](https://kutskurls.com/services#waxing): Waxing Half Hand SGD 38; Waxing Full Hand SGD 78; Waxing Half Leg SGD 48; Waxing Full Leg SGD 98
+- [Manicure Services](https://kutskurls.com/services#manicure): Classic Manicure SGD 25; Express Manicure SGD 20; Full Classic Manicure Gel Polish SGD 45; Express Gel Polish Manicure SGD 35; Nail Mask Manicure SGD 20–28; Spa Manicure SGD 48–68
+- [Pedicure Services](https://kutskurls.com/services#pedicure): Classic Pedicure SGD 35; Express Pedicure SGD 20; Full Classic Pedicure Gel Polish SGD 55; Express Gel Polish Pedicure SGD 38; Nail Mask Pedicure SGD 20–28; Spa Pedicure SGD 48–68; Men's Pedicure SGD 40
+- [Combo Services](https://kutskurls.com/services#combos): Classic Manicure & Pedicure SGD 60; Express Gel Polish Manicure & Pedicure SGD 73
+- [Soak Off Services](https://kutskurls.com/services#soak-off): Soak Off Acrylic SGD 48; Soak Off Hard Gel SGD 48; Soak Off Gel Polish SGD 15
+- [Other Services](https://kutskurls.com/services#other): French SGD 20–28; French Gel Polish SGD 20–28; Gel Change Colour SGD 25; Gel Extension SGD 80–100; Acrylic Infill SGD 50; Callus Treatment SGD 38–68; Nail Art from SGD 3
+
+## Optional
+
+- [Full plain-text brief](https://kutskurls.com/llms-full.txt): Every published price, policy and FAQ answer in one file
+- [Sitemap](https://kutskurls.com/sitemap.xml): Canonical URLs
+- [KurlsBot](https://chatgpt.com/g/g-NwIWWtD6r-kurlsbot): Salon assistant on ChatGPT

@@ -10,18 +10,19 @@
       name="description"
       content="Frequently Asked Questions about Kuts & Kurls hair and nail services in Singapore. Find answers about booking, pricing, and our salon policies."
     />
-    <meta name="robots" content="index,follow" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <meta name="author" content="Web Wizards" />
     <link rel="manifest" href="/manifest.json" />
-    <link rel="icon" href="/public/favicon.png" type="image/png" sizes="any" />
-    <link rel="apple-touch-icon" href="/public/favicon.png" sizes="180x180" />
+    <link rel="icon" href="/public/favicon-32.png" type="image/png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="/public/apple-touch-icon.png" sizes="180x180" />
     <link rel="canonical" href="https://kutskurls.com/faq" />
+    <link rel="alternate" type="text/plain" href="https://kutskurls.com/llms.txt" title="llms.txt" />
+    <link rel="alternate" type="text/plain" href="https://kutskurls.com/llms-full.txt" title="llms-full.txt" />
+    
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+SC:wght@400;600;700&family=Inter:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Noto+Sans+SC:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="preload" href="/public/styles.css" as="style" />
     <link rel="stylesheet" href="/public/styles.css" />
     <style>
       .faq-hero {
@@ -40,12 +41,30 @@
         padding: 40px 20px 100px;
       }
     </style>
+      <meta property="og:type" content="website" />
+      <meta property="og:title" content="FAQ — Kuts & Kurls" />
+      <meta property="og:description" content="Frequently Asked Questions about Kuts & Kurls hair and nail services in Singapore. Find answers about booking, pricing, and our salon policies." />
+      <meta property="og:url" content="https://kutskurls.com/faq" />
+      <meta property="og:image" content="https://kutskurls.com/public/storepictures/2.webp" />
+      <meta property="og:image:secure_url" content="https://kutskurls.com/public/storepictures/2.webp" />
+      <meta property="og:image:type" content="image/webp" />
+      <meta property="og:image:width" content="1360" />
+      <meta property="og:image:height" content="1020" />
+      <meta property="og:image:alt" content="Interior of Kuts & Kurls at Roxy Square II" />
+      <meta property="og:site_name" content="Kuts & Kurls" />
+      <meta property="og:locale" content="en_SG" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="FAQ — Kuts & Kurls" />
+      <meta name="twitter:description" content="Frequently Asked Questions about Kuts & Kurls hair and nail services in Singapore. Find answers about booking, pricing, and our salon policies." />
+      <meta name="twitter:image" content="https://kutskurls.com/public/storepictures/2.webp" />
+      <meta name="twitter:image:alt" content="Interior of Kuts & Kurls at Roxy Square II" />
+      <meta name="twitter:url" content="https://kutskurls.com/faq" />
   </head>
   <body>
     <header class="site-header">
       <div class="container header-inner">
         <a class="branding" href="/" aria-label="Kuts & Kurls home">
-          <img src="/public/storepictures/banner.png" alt="Kuts & Kurls logo" />
+          <img decoding="async" width="640" height="116" src="/public/storepictures/banner-nav.webp" alt="Kuts & Kurls logo" />
         </a>
         <nav class="nav" aria-label="Primary">
           <a href="/#specializations" data-en="Specializations" data-zh="特色">Specializations</a>
@@ -68,6 +87,7 @@
     <main>
       <section class="faq-hero reveal">
         <div class="container">
+          <nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="/" data-en="Home" data-zh="首页">Home</a></li><li aria-current="page" data-en="FAQ" data-zh="常见问题">FAQ</li></ol></nav>
           <h1 data-en="Frequently Asked Questions" data-zh="常见问题">Frequently Asked Questions</h1>
           <p class="intro-text" data-en="Find quick answers to your common queries." data-zh="为您常见的疑问提供快速解答。">Find quick answers to your common queries.</p>
         </div>
@@ -210,16 +230,26 @@
             </div>
           </section>
         </div>
+        <p class="section-links">
+          <a href="/services" data-en="View prices" data-zh="查看价格">View prices</a>
+          <a href="/about" data-en="About the salon" data-zh="关于沙龙">About the salon</a>
+          <a href="/service-categories" data-en="Service standards" data-zh="服务标准">Service standards</a>
+          <a href="/#contact" data-en="Contact and map" data-zh="联系与地图">Contact and map</a>
+        </p>
       </section>
     </main>
 
     <footer class="site-footer">
       <div class="container">
-        <nav class="footer-nav">
+        <nav class="footer-nav" aria-label="Footer">
+          <a href="/" data-en="Home" data-zh="首页">Home</a>
           <a href="/#specializations" data-en="Specializations" data-zh="特色">Specializations</a>
-          <a href="/#services" data-en="Services" data-zh="服务项目">Services</a>
+          <a href="/services" data-en="Services" data-zh="服务项目">Services</a>
+          <a href="/service-categories" data-en="Our standards" data-zh="服务标准">Our standards</a>
           <a href="/about" data-en="About Us" data-zh="关于我们">About Us</a>
           <a href="/faq" data-en="FAQ" data-zh="常见问题">FAQ</a>
+          <a href="/#contact" data-en="Contact" data-zh="联系">Contact</a>
+          <a href="/#media" data-en="Media" data-zh="媒体">Media</a>
         </nav>
         <small>
           <span>Kuts & Kurls</span> ｜ <span>#01-135</span> ｜ 
@@ -231,105 +261,280 @@
     <div id="mobile-menu" class="mobile-menu" hidden>
       <div class="mobile-menu-inner">
         <button id="mobile-close" class="mobile-close">×</button>
-        <nav class="mobile-nav">
+        <nav class="mobile-nav" aria-label="Mobile">
           <a href="/" data-en="Home" data-zh="首页">Home</a>
+          <a href="/#specializations" data-en="Specializations" data-zh="特色">Specializations</a>
+          <a href="/services" data-en="Services" data-zh="服务项目">Services</a>
+          <a href="/service-categories" data-en="Our standards" data-zh="服务标准">Our standards</a>
           <a href="/about" data-en="About Us" data-zh="关于我们">About Us</a>
           <a href="/faq" data-en="FAQ" data-zh="常见问题">FAQ</a>
           <a href="/#contact" data-en="Contact" data-zh="联系">Contact</a>
+          <a href="/#media" data-en="Media" data-zh="媒体">Media</a>
         </nav>
       </div>
     </div>
-
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "Do I need to make an appointment?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Walk-ins are accepted when we have availability, but appointments are recommended to secure your preferred time slot and stylist. WhatsApp 9636 3537 is the fastest way to book. You can also call 6909 7503 during opening hours."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What are your opening hours?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "We are open daily from 9:30 am to 8:30 pm, including weekends and public holidays."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Where are you located?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "We are located at 50 East Coast Rd, #01-135, Roxy Square II, Singapore 428769. It is conveniently located near the Katong area."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Do you offer services for children and men?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes, we offer haircuts and services for men, women, and children. We are a family-friendly salon."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What payment methods do you accept?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "We accept Cash, PayNow, NETS, and major Credit Cards."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Will I know the price before service starts?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes. Our menu is published with clear prices, and we will confirm the expected price with you before any service begins. If your hair length, condition or service choice would change the price, we will tell you upfront — not after the service is done."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What happens during a consultation?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Before colour, perm, treatment, lash or IPL services, we check your hair, scalp or skin condition, ask about your previous services and lifestyle, and discuss what you want the result to look like. We then explain the suitable options, the time required, and the price — so you can decide without pressure."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What are your most popular services?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Customers most often book everyday haircuts, hair colour and highlights, perms (digital, cool perm, rebonding), keratin and scalp treatments, classic and gel manicures and pedicures, and eyelash extensions. WhatsApp us if you are not sure which service is suitable."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Will you push me to add extra services?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "No. We may suggest a treatment if it would clearly help your hair condition, but the decision is always yours. If you only want the service you booked, that is what you will get — at the price on the menu."
-            }
-          }
-        ]
-      }
-    </script>
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {"@type":"ListItem","position":1,"name":"Home","item":"https://kutskurls.com/"},
-          {"@type":"ListItem","position":2,"name":"FAQ","item":"https://kutskurls.com/faq"}
-        ]
-      }
-    </script>
     <script type="module" src="/public/app.js"></script>
-  </body>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://kutskurls.com/#website",
+      "url": "https://kutskurls.com/",
+      "name": "Kuts & Kurls",
+      "description": "Hair and beauty salon at Roxy Square II, Singapore, with clear SGD menu prices.",
+      "inLanguage": [
+        "en",
+        "zh-Hans"
+      ],
+      "publisher": {
+        "@id": "https://kutskurls.com/#salon"
+      },
+      "significantLink": [
+        "https://kutskurls.com/services",
+        "https://kutskurls.com/service-categories",
+        "https://kutskurls.com/about",
+        "https://kutskurls.com/faq"
+      ]
+    },
+    {
+      "@type": [
+        "HairSalon",
+        "NailSalon"
+      ],
+      "@id": "https://kutskurls.com/#salon",
+      "name": "Kuts & Kurls",
+      "url": "https://kutskurls.com/",
+      "description": "Hair, nails, lashes, brows, waxing and IPL at Roxy Square II, Singapore. Menu prices are in SGD and confirmed again before every service.",
+      "telephone": "+6569097503",
+      "image": [
+        "https://kutskurls.com/public/storepictures/1.jpeg",
+        "https://kutskurls.com/public/storepictures/2.webp",
+        "https://kutskurls.com/public/storepictures/3.webp"
+      ],
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://kutskurls.com/#logo",
+        "url": "https://kutskurls.com/public/storepictures/banner-nav.webp",
+        "width": 640,
+        "height": 116,
+        "caption": "Kuts & Kurls logo"
+      },
+      "priceRange": "SGD 20–SGD 588",
+      "paymentAccepted": "Cash, PayNow, NETS, Credit Card",
+      "currenciesAccepted": "SGD",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "50 East Coast Rd, #01-135, Roxy Square II",
+        "addressLocality": "Singapore",
+        "postalCode": "428769",
+        "addressCountry": "SG"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 1.3039,
+        "longitude": 103.9045
+      },
+      "hasMap": "https://www.google.com/maps/search/?api=1&query=50+East+Coast+Road+01-135+Roxy+Square+II+Singapore+428769",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "https://schema.org/Monday",
+          "https://schema.org/Tuesday",
+          "https://schema.org/Wednesday",
+          "https://schema.org/Thursday",
+          "https://schema.org/Friday",
+          "https://schema.org/Saturday",
+          "https://schema.org/Sunday"
+        ],
+        "opens": "09:30",
+        "closes": "20:30"
+      },
+      "openingHours": "Mo-Su 09:30-20:30",
+      "areaServed": {
+        "@type": "City",
+        "name": "Singapore"
+      },
+      "knowsLanguage": [
+        "en",
+        "zh",
+        "vi"
+      ],
+      "sameAs": [
+        "https://chatgpt.com/g/g-NwIWWtD6r-kurlsbot"
+      ],
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+6569097503",
+          "contactType": "customer service",
+          "areaServed": "SG",
+          "availableLanguage": [
+            "English",
+            "Chinese",
+            "Vietnamese"
+          ]
+        },
+        {
+          "@type": "ContactPoint",
+          "telephone": "+6596363537",
+          "contactType": "reservations",
+          "url": "https://wa.me/6596363537",
+          "areaServed": "SG",
+          "availableLanguage": [
+            "English",
+            "Chinese",
+            "Vietnamese"
+          ]
+        }
+      ],
+      "potentialAction": [
+        {
+          "@type": "ReserveAction",
+          "name": "Book by WhatsApp",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://wa.me/6596363537",
+            "actionPlatform": [
+              "https://schema.org/DesktopWebPlatform",
+              "https://schema.org/MobileWebPlatform"
+            ]
+          }
+        },
+        {
+          "@type": "ReserveAction",
+          "name": "Book online",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://kutsnkurls.setmore.com",
+            "actionPlatform": [
+              "https://schema.org/DesktopWebPlatform",
+              "https://schema.org/MobileWebPlatform"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://kutskurls.com/faq#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://kutskurls.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "FAQ",
+          "item": "https://kutskurls.com/faq"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://kutskurls.com/faq#faq",
+      "url": "https://kutskurls.com/faq",
+      "name": "FAQ — Kuts & Kurls",
+      "description": "Booking, opening hours, location, payments, pricing and consultations at Kuts & Kurls.",
+      "isPartOf": {
+        "@id": "https://kutskurls.com/#website"
+      },
+      "about": {
+        "@id": "https://kutskurls.com/#salon"
+      },
+      "inLanguage": "en",
+      "breadcrumb": {
+        "@id": "https://kutskurls.com/faq#breadcrumb"
+      },
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          ".faq-hero h1",
+          ".faq-hero .intro-text"
+        ]
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do I need to make an appointment?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Walk-ins are accepted when we have availability, but appointments are recommended to secure your preferred time slot and stylist. WhatsApp 9636 3537 is the fastest way to book. You can also call 6909 7503 during opening hours."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are your opening hours?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We are open daily from 9:30 am to 8:30 pm, including weekends and public holidays."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where are you located?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We are located at 50 East Coast Rd, #01-135, Roxy Square II, Singapore 428769. It is conveniently located near the Katong area."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer services for children and men?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, we offer haircuts and services for men, women, and children. We are a family-friendly salon."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What payment methods do you accept?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We accept Cash, PayNow, NETS, and major Credit Cards."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will I know the price before service starts?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Our menu is published with clear prices, and we will confirm the expected price with you before any service begins. If your hair length, condition or service choice would change the price, we will tell you upfront — not after the service is done."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens during a consultation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Before colour, perm, treatment, lash or IPL services, we check your hair, scalp or skin condition, ask about your previous services and lifestyle, and discuss what you want the result to look like. We then explain the suitable options, the time required, and the price — so you can decide without pressure."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are your most popular services?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Customers most often book everyday haircuts, hair colour and highlights, perms (digital, cool perm, rebonding), keratin and scalp treatments, classic and gel manicures and pedicures, and eyelash extensions. WhatsApp us if you are not sure which service is suitable."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will you push me to add extra services?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. We may suggest a treatment if it would clearly help your hair condition, but the decision is always yours. If you only want the service you booked, that is what you will get — at the price on the menu."
+          }
+        }
+      ],
+      "dateModified": "2026-10-21"
+    }
+  ]
+}
+    </script>
+</body>
 </html>
