@@ -6,6 +6,7 @@
     { "src": "faq.html", "use": "@vercel/static" },
     { "src": "services.html", "use": "@vercel/static" },
     { "src": "service-categories.html", "use": "@vercel/static" },
+    { "src": "rebonding-vs-digital-perm.html", "use": "@vercel/static" },
     { "src": "sitemap.xml", "use": "@vercel/static" },
     { "src": "robots.txt", "use": "@vercel/static" },
     { "src": "llms.txt", "use": "@vercel/static" },
@@ -21,6 +22,7 @@
     { "source": "/faq.html", "destination": "/faq", "permanent": true },
     { "source": "/services.html", "destination": "/services", "permanent": true },
     { "source": "/service-categories.html", "destination": "/service-categories", "permanent": true },
+    { "source": "/rebonding-vs-digital-perm.html", "destination": "/rebonding-vs-digital-perm", "permanent": true },
     { "source": "/about/", "destination": "/about", "permanent": true },
     { "source": "/faq/", "destination": "/faq", "permanent": true },
     { "source": "/services/", "destination": "/services", "permanent": true },
@@ -32,6 +34,7 @@
     { "source": "/faq", "destination": "/faq.html" },
     { "source": "/services", "destination": "/services.html" },
     { "source": "/service-categories", "destination": "/service-categories.html" },
+    { "source": "/rebonding-vs-digital-perm", "destination": "/rebonding-vs-digital-perm.html" },
     { "source": "/favicon.ico", "destination": "/public/favicon-32.png" },
     { "source": "/(index)?", "destination": "/index.html" }
   ],
