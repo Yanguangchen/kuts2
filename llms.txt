@@ -15,6 +15,7 @@ The same URLs show English and Simplified Chinese. English is the canonical text
 - [Why trust our services](https://kutskurls.com/service-categories): Haircut, perm, nail and beauty standards
 - [About](https://kutskurls.com/about): Who the salon is and how a visit works
 - [FAQ](https://kutskurls.com/faq): Booking, hours, location, payments, pricing and consultations
+- [Keratin or repair](https://kutskurls.com/keratin-or-repair): Repair hair treatment SGD 128–168 and keratin hair treatment SGD 268–358, chosen after a consultation.
 
 ## Service menus
 

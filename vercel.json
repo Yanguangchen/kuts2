@@ -4,6 +4,7 @@
     { "src": "index.html", "use": "@vercel/static" },
     { "src": "about.html", "use": "@vercel/static" },
     { "src": "faq.html", "use": "@vercel/static" },
+    { "src": "keratin-or-repair.html", "use": "@vercel/static" },
     { "src": "services.html", "use": "@vercel/static" },
     { "src": "service-categories.html", "use": "@vercel/static" },
     { "src": "sitemap.xml", "use": "@vercel/static" },
@@ -19,6 +20,7 @@
     { "source": "/index.html", "destination": "/", "permanent": true },
     { "source": "/about.html", "destination": "/about", "permanent": true },
     { "source": "/faq.html", "destination": "/faq", "permanent": true },
+    { "source": "/keratin-or-repair.html", "destination": "/keratin-or-repair", "permanent": true },
     { "source": "/services.html", "destination": "/services", "permanent": true },
     { "source": "/service-categories.html", "destination": "/service-categories", "permanent": true },
     { "source": "/about/", "destination": "/about", "permanent": true },
@@ -30,6 +32,7 @@
   "rewrites": [
     { "source": "/about", "destination": "/about.html" },
     { "source": "/faq", "destination": "/faq.html" },
+    { "source": "/keratin-or-repair", "destination": "/keratin-or-repair.html" },
     { "source": "/services", "destination": "/services.html" },
     { "source": "/service-categories", "destination": "/service-categories.html" },
     { "source": "/favicon.ico", "destination": "/public/favicon-32.png" },
